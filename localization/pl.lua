@@ -41,8 +41,8 @@ return {
             j_cl_stamped_delivery = {
                 name = "Wysyłka z Pieczątką",
                 text = {
-                    "{C:attention}4{}, {C:attention}5{}, {C:attention}6{} i {C:attention}7{} otrzymują losową pieczęć",
-                    "w momencie dodania do talii"
+                    "{C:attention}4{}, {C:attention}5{}, {C:attention}6{} i {C:attention}7{} otrzymują losową",
+                    "{C:attention}pieczęć{} w momencie dodania do talii"
                 },
             },
             j_cl_flea_market = {

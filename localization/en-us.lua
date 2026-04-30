@@ -12,7 +12,7 @@ return {
                 name = "Heterochromia Joker",
                 text = {
                     "{C:mult}+#2#{} Mult if played hand has",
-                    "equal {C:spades}black{} and {C:hearts}red{} card",
+                    "equal {C:spades}black{} and {C:hearts}red{} cards",
                     "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult){}"
                 },
             },
@@ -41,8 +41,8 @@ return {
             j_cl_stamped_delivery = {
                 name = "Stamped Delivery",
                 text = {
-                    "{C:attention}4{}, {C:attention}5{}, {C:attention}6{} and {C:attention}7{} gain a random seal",
-                    "when added to a deck"
+                    "{C:attention}4{}, {C:attention}5{}, {C:attention}6{} and {C:attention}7{} gain a random",
+                    "{C:attention}seal{} when added to a deck"
                 },
             },
             j_cl_flea_market = {
