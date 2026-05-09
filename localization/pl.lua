@@ -131,6 +131,7 @@ return {
         dictionary = {
             a_abracadabra="Abrakadabra!",
             a_watered="Podlane!",
+            a_plant_maxed="(osiągnięto maksimum)",
             a_right="prawo",
             a_left="lewo",
             a_pop="Puf!",

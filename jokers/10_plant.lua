@@ -33,15 +33,16 @@ SMODS.Joker{
     calculate = function(self, card, context)
         if context.before
         and card.ability.extra.stage_target
+        and G._cl_.HANDS_ORDERED[card.ability.extra.stage_target]
         and context.scoring_name == G._cl_.HANDS_ORDERED[card.ability.extra.stage_target].hand
         and not context.blueprint then
             local reward = G._cl_.HANDS_ORDERED[card.ability.extra.stage_target]
             if reward then
-                local next_reward = G._cl_.HANDS_ORDERED[card.ability.extra.stage_target]
                 card.ability.extra.chips = 2 * reward.chips
                 card.ability.extra.mult = 2 * reward.mult
                 card.ability.extra.stage_target = card.ability.extra.stage_target + 1
-                card.ability.extra.target_name = next_reward.hand or "(max)"
+                local next_reward = G._cl_.HANDS_ORDERED[card.ability.extra.stage_target]
+                card.ability.extra.target_name = next_reward and next_reward.hand or nil
             end
 
             play_sound('crumple1')
@@ -68,7 +69,9 @@ SMODS.Joker{
         return { vars = {
                 card.ability.extra.chips,
                 card.ability.extra.mult,
-                G.localization.misc.poker_hands[card.ability.extra.target_name],
+                card.ability.extra.target_name
+                    and G.localization.misc.poker_hands[card.ability.extra.target_name]
+                    or localize('a_plant_maxed')
         }}
     end,
 }

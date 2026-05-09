@@ -131,11 +131,13 @@ return {
         dictionary = {
             a_abracadabra="Abracadabra!",
             a_watered="Watered!",
+            a_plant_maxed="(max reached)",
             a_right="right",
             a_left="left",
             a_pop="Pop!",
             a_cards="cards",
             a_tag="tag",
+
         }
     }
 }
