@@ -7,7 +7,7 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "ghost",
-    config = { extra = { money = 0, money_mod = 2 } },
+    config = { extra = { money_mod = 2 } },
     pos = { x = 0, y = 0 },
     rarity = 1,
     cost = 4,
@@ -19,24 +19,18 @@ SMODS.Joker{
     atlas = 'ghost',
     soul_pos = nil,
 
-    calculate = function(self, card, context)
-        if context.using_consumeable and context.consumeable and context.consumeable.ability.set == 'Spectral' and not context.blueprint then
-            card_eval_status_text(card, 'extra', nil, nil, nil, {
-                message = localize('k_upgrade_ex'),
-                colour = G.C.GOLD,
-            })
-            card.ability.extra.money = card.ability.extra.money + card.ability.extra.money_mod
-        end
-    end,
-
     calc_dollar_bonus = function(self, card)
-		local bonus = card.ability.extra.money
+		local bonus = G.GAME.consumeable_usage_total
+            and G.GAME.consumeable_usage_total.spectral * card.ability.extra.money_mod
+            or 0
 		if bonus > 0 then return bonus end
 	end,
 
     loc_vars = function(self, info_queue, card)
         return { vars = {
-            card.ability.extra.money,
+            G.GAME.consumeable_usage_total
+                and G.GAME.consumeable_usage_total.spectral * card.ability.extra.money_mod
+                or 0,
             card.ability.extra.money_mod,
         }}
     end,

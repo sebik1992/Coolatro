@@ -19,8 +19,8 @@ return {
             j_cl_ghost = {
                 name = "Ghost Joker",
                 text = {
-                    "Earn {C:money}$#2#{} at the end",
-                    "of round per {C:spectral}Spectral{} card used",
+                    "Earn {C:money}$#2#{} at the end of round",
+                    "per {C:spectral}Spectral{} card used this run",
                     "{C:inactive}(Currently {C:money}$#1#{C:inactive})"
                 },
             },

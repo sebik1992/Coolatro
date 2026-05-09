@@ -19,8 +19,8 @@ return {
             j_cl_ghost = {
                 name = "Joker Duch",
                 text = {
-                    "Zdobądź {C:money}$#2#{} na koniec",
-                    "rundy za każdą użytą kartę {C:spectral}ducha{}",
+                    "Zdobądź {C:money}$#2#{} na koniec rundy",
+                    "za każdą użytą kartę {C:spectral}ducha{} w tej grze",
                     "{C:inactive}(Obecnie {C:money}$#1#{C:inactive})"
                 },
             },
