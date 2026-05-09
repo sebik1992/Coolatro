@@ -37,10 +37,11 @@ SMODS.Joker{
         and not context.blueprint then
             local reward = G._cl_.HANDS_ORDERED[card.ability.extra.stage_target]
             if reward then
+                local next_reward = G._cl_.HANDS_ORDERED[card.ability.extra.stage_target]
                 card.ability.extra.chips = 2 * reward.chips
                 card.ability.extra.mult = 2 * reward.mult
                 card.ability.extra.stage_target = card.ability.extra.stage_target + 1
-                card.ability.extra.target_name = G._cl_.HANDS_ORDERED[card.ability.extra.stage_target].hand or "(max)"
+                card.ability.extra.target_name = next_reward.hand or "(max)"
             end
 
             play_sound('crumple1')

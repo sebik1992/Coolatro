@@ -7,7 +7,7 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "flea_market",
-    config = { extra = { tarrot_rank = "2", planet_rank = "3", prob_top = 1, prob_bottom = 5 } },
+    config = { extra = { tarrot_rank = "2", planet_rank = "3", prob_top = 1, prob_bottom = 3 } },
     pos = { x = 0, y = 0 },
     rarity = 1,
     cost = 4,
