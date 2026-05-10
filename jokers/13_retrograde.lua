@@ -24,8 +24,9 @@ SMODS.Joker{
             local hand_name = context.scoring_name
             local hand_data = G.GAME.hands[hand_name]
             local has_room = #G.consumeables.cards < G.consumeables.config.card_limit
+            local level = hand_data and (tonumber(tostring(hand_data.level)) or 1) -- tonumber/tostring magic is needed as level comes off as table sometimes
 
-            if hand_data and hand_data.level > 1 then
+            if level > 1 then
                 level_up_hand(card, hand_name, false, -1)
                 update_hand_text(
                     { sound = 'button', volume = 0.7, pitch = 0.8, delay = 0.3 },
@@ -52,7 +53,7 @@ SMODS.Joker{
     loc_vars = function(self, info_queue, card)
         info_queue[#info_queue + 1] = G.P_CENTERS['c_trance']
         return { vars = {
-            G.P_CENTERS['c_trance'].name, --todo PL translate
+            G.P_CENTERS['c_trance'].name, --todo translate
         }}
     end,
 }

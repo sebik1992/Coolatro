@@ -7,7 +7,7 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "on_the_house",
-    config = { extra = { prob_top = 1, prob_bottom = 3, poker_hand = "Full House" } },
+    config = { extra = { prob_top = 1, prob_bottom = 2, poker_hand = "Full House" } },
     pos = { x = 0, y = 0 },
     rarity = 2,
     cost = 6,
