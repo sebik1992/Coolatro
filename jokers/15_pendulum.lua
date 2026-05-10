@@ -5,6 +5,49 @@ SMODS.Atlas({
     py = 95
 })
 
+local function pendulum_clear_debuffs(card)
+    for _, j in ipairs(card._pendulum_debuff or {}) do
+        j.debuff = false
+    end
+end
+
+local function pendulum_apply_debuffs(card)
+    for _, j in ipairs(card._pendulum_debuff or {}) do
+        j.debuff = true
+    end
+end
+
+local function pendulum_build_sides(card)
+    card._pendulum_retrigger = {}
+    card._pendulum_debuff    = {}
+
+    local extra = card.ability.extra
+    local retrigger_indices = extra.swings_right
+        and { extra.right1, extra.right2 }
+        or  { extra.left1,  extra.left2  }
+
+    local retrigger_set = {}
+    for _, idx in ipairs(retrigger_indices) do
+        local j = idx and G.jokers.cards[idx]
+        if j and j ~= card then
+            card._pendulum_retrigger[#card._pendulum_retrigger + 1] = j
+            retrigger_set[j] = true
+        end
+    end
+
+    for _, j in ipairs(G.jokers.cards) do
+        if j ~= card and not retrigger_set[j] then
+            card._pendulum_debuff[#card._pendulum_debuff + 1] = j
+        end
+    end
+end
+
+local function pendulum_sprite(card)
+    card.children.center.sprite_pos =
+        card.ability.extra.swings_right and { x = 0, y = 0 } or { x = 1, y = 0 }
+end
+
+
 SMODS.Joker{
     key = "pendulum",
     config = { extra = { swings_right = true, left1 = nil, left2 = nil, right1 = nil, right2 = nil } },
@@ -20,49 +63,12 @@ SMODS.Joker{
     load = function(self, card, card_table, other_card)
         G.E_MANAGER:add_event(Event({
             func = function()
-                for _, j in ipairs(card._pendulum_debuff or {}) do
-                    j.debuff = false
-                end
-
-                card._pendulum_retrigger = {}
-                card._pendulum_debuff    = {}
-
-                local extra = card.ability.extra
-
-                local retrigger_indices = extra.swings_right
-                    and { extra.right1, extra.right2 }
-                    or  { extra.left1,  extra.left2  }
-
-                local debuff_indices = extra.swings_right
-                    and { extra.left1,  extra.left2  }
-                    or  { extra.right1, extra.right2 }
-
-                local function safe_resolve(idx)
-                    if not idx then return nil end
-                    local j = G.jokers.cards[idx]
-                    if not j or j == card then return nil end
-                    return j
-                end
-
-                for _, idx in ipairs(retrigger_indices) do
-                    local j = safe_resolve(idx)
-                    if j then card._pendulum_retrigger[#card._pendulum_retrigger + 1] = j end
-                end
-                for _, idx in ipairs(debuff_indices) do
-                    local j = safe_resolve(idx)
-                    if j then card._pendulum_debuff[#card._pendulum_debuff + 1] = j end
-                end
-
+                pendulum_clear_debuffs(card)
+                pendulum_build_sides(card)
                 if G.GAME and G.GAME.blind and G.GAME.blind.active then
-                    for _, j in ipairs(card._pendulum_debuff) do
-                        j.debuff = true
-                        print("[Pendulum] load: debuffing " .. tostring(j.ability and j.ability.name))
-                    end
+                    pendulum_apply_debuffs(card)
                 end
-
-                local new_pos = extra.swings_right and { x = 0, y = 0 } or { x = 1, y = 0 }
-                card.children.center.sprite_pos = new_pos
-
+                pendulum_sprite(card)
                 return true
             end
         }))
@@ -71,85 +77,40 @@ SMODS.Joker{
     calculate = function(self, card, context)
         local extra = card.ability.extra
 
-        local function build_sides()
-            card._pendulum_retrigger = {}
-            card._pendulum_debuff    = {}
-
-            local retrigger_indices = extra.swings_right
-                and { extra.right1, extra.right2 }
-                or  { extra.left1,  extra.left2  }
-
-            local debuff_indices = extra.swings_right
-                and { extra.left1,  extra.left2  }
-                or  { extra.right1, extra.right2 }
-
-            for _, idx in ipairs(retrigger_indices) do
-                local j = idx and G.jokers.cards[idx]
-                if j then card._pendulum_retrigger[#card._pendulum_retrigger + 1] = j end
-            end
-            for _, idx in ipairs(debuff_indices) do
-                local j = idx and G.jokers.cards[idx]
-                if j then card._pendulum_debuff[#card._pendulum_debuff + 1] = j end
-            end
-        end
-
         if context.setting_blind then
-            local my_idx = nil
+            local my_idx
             for i, j in ipairs(G.jokers.cards) do
                 if j == card then my_idx = i; break end
             end
             if not my_idx then return end
 
-            local function valid_idx(i)
-                return (i >= 1 and i <= #G.jokers.cards) and i or nil
-            end
-            extra.left1  = valid_idx(my_idx - 1)
-            extra.left2  = valid_idx(my_idx - 2)
-            extra.right1 = valid_idx(my_idx + 1)
-            extra.right2 = valid_idx(my_idx + 2)
+            local n = #G.jokers.cards
+            local function clamp(i) return (i >= 1 and i <= n) and i or nil end
+            extra.left1  = clamp(my_idx - 1)
+            extra.left2  = clamp(my_idx - 2)
+            extra.right1 = clamp(my_idx + 1)
+            extra.right2 = clamp(my_idx + 2)
 
-            for _, j in ipairs(card._pendulum_debuff or {}) do
-                j.debuff = false
-            end
-
-            build_sides()
-
-            for _, j in ipairs(card._pendulum_debuff) do
-                j.debuff = true
-            end
+            pendulum_clear_debuffs(card)
+            pendulum_build_sides(card)
+            pendulum_apply_debuffs(card)
         end
 
         if context.retrigger_joker_check then
             for _, j in ipairs(card._pendulum_retrigger or {}) do
                 if j == context.other_card then
-                    return {
-                        message     = localize('k_again_ex'),
-                        colour      = G.C.BLUE,
-                        repetitions = 1,
-                    }
+                    return { message = localize('k_again_ex'), colour = G.C.BLUE, repetitions = 2 }
                 end
             end
         end
 
         if context.after then
-            for _, j in ipairs(card._pendulum_debuff or {}) do
-                j.debuff = false
-            end
-
+            pendulum_clear_debuffs(card)
             extra.swings_right = not extra.swings_right
-            build_sides()
+            pendulum_build_sides(card)
+            pendulum_apply_debuffs(card)
 
-            for _, j in ipairs(card._pendulum_debuff) do
-                j.debuff = true
-            end
-
-            local new_pos = extra.swings_right and { x = 0, y = 0 } or { x = 1, y = 0 }
-            G.E_MANAGER:add_event(Event({
-                func = function()
-                    card.children.center.sprite_pos = new_pos
-                    return true
-                end
-            }))
+            G.E_MANAGER:add_event(Event({ func = function() pendulum_sprite(card); return true end }))
 
             card_eval_status_text(card, 'extra', nil, nil, nil, {
                 message = extra.swings_right and ">>" or "<<",
@@ -158,9 +119,7 @@ SMODS.Joker{
         end
 
         if context.end_of_round and not context.individual and not context.repetition then
-            for _, j in ipairs(card._pendulum_debuff or {}) do
-                j.debuff = false
-            end
+            pendulum_clear_debuffs(card)
             card._pendulum_debuff    = {}
             card._pendulum_retrigger = {}
         end

@@ -119,9 +119,9 @@ return {
             j_cl_pendulum = {
                 name = "Pendulum",
                 text = {
-                    "Retrigger 2 jokers to the {C:attention}#1#{}",
-                    "Debuffs 2 jokers to the {C:attention}#2#{}",
-                    "Swaps each hand",
+                    "Trigger thrice 2 jokers to the {C:attention}#1#{}",
+                    "Debuffs all other jokers",
+                    "Direction swaps each hand",
                     "{C:inactive}(Jokers fixed after Blind is selected){}"
                 },
             },
