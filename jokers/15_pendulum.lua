@@ -126,10 +126,8 @@ SMODS.Joker{
     end,
 
     loc_vars = function(self, info_queue, card)
-        local swings_right = card.ability.extra.swings_right
         return { vars = {
-            swings_right and localize('a_right') or localize('a_left'),
-            swings_right and localize('a_left')  or localize('a_right'),
+            card.ability.extra.swings_right and localize('a_right') or localize('a_left'),
         }}
     end,
 }
