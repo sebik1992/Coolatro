@@ -11,8 +11,8 @@ return {
             j_cl_heterochromia = {
                 name = "Heterochromia Joker",
                 text = {
-                    "{C:mult}+#2#{} Mult if played hand has",
-                    "equal {C:spades}black{} and {C:hearts}red{} cards",
+                    "{C:mult}+#2#{} Mult if played hand has equal",
+                    "number of {C:spades}black{} and {C:hearts}red{} cards",
                     "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult){}"
                 },
             },
