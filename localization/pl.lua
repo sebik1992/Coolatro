@@ -119,8 +119,9 @@ return {
             j_cl_pendulum = {
                 name = "Pendulum",
                 text = {
+                    "Podczas przeszkadzajki:",
                     "Aktywuj potrójnie 2 Jokery na {C:attention}#1#{}",
-                    "Osłabia wszystkie pozostałe Jokery",
+                    "{C:red}Osłabia{} wszystkie pozostałe Jokery",
                     "Zmiana co zagrywaną rękę",
                     "{C:inactive}(Jokery nie zmieniają się po wybraniu Przeszkadzajki){}",
                 },
