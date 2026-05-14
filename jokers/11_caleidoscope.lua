@@ -43,12 +43,14 @@ SMODS.Joker{
             }
         end
 
-        if context.joker_main and context.scoring_name == hand then
-            card.ability.extra.x_mult = card.ability.extra.x_mult + card.ability.extra.x_mult_mod
-            card_eval_status_text(card, 'extra', nil, nil, nil, {
-                message = localize('k_upgrade_ex'),
-                colour = G.C.RED,
-            })
+        if context.joker_main then
+            if context.scoring_name == hand then
+                card.ability.extra.x_mult = card.ability.extra.x_mult + card.ability.extra.x_mult_mod
+                card_eval_status_text(card, 'extra', nil, nil, nil, {
+                    message = localize('k_upgrade_ex'),
+                    colour = G.C.RED,
+                })
+            end
             return {
                 colour = G.C.RED,
                 x_mult = card.ability.extra.x_mult

@@ -85,7 +85,7 @@ return {
                 name = "Kalejdoskop",
                 text = {
                     "Gdy zagrany układ to {C:attention}#3#{}",
-                    "ten joker punktuje, zyskuje {X:mult,C:white} X#2# {} Mnoż.",
+                    "ten joker zyskuje {X:mult,C:white} X#2# {} Mnoż.",
                     "i zmienia kolor kart zagrywanej ręki",
                     "{C:inactive}(Obecnie {X:mult,C:white} X#1# {C:inactive} Mnoż.)"
                 },

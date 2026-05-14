@@ -85,7 +85,7 @@ return {
                 name = "Caleidoscope",
                 text = {
                     "If played hand is {C:attention}#3#{}",
-                    "this scores, gains {X:mult,C:white} X#2# {} Mult",
+                    "this gains {X:mult,C:white} X#2# {} Mult",
                     "and changes suit of played hand",
                     "{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)"
                 },
