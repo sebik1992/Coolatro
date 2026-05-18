@@ -7,31 +7,31 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "ghost",
-    config = { extra = { money_mod = 2 } },
+    config = { extra = { shop_skipped = true } },
     pos = { x = 0, y = 0 },
-    rarity = 1,
-    cost = 4,
+    rarity = 2,
+    cost = 6,
     blueprint_compat = true,
     eternal_compat = true,
     unlocked = true,
     discovered = true,
-    effect = nil,
     atlas = 'ghost',
-    soul_pos = nil,
 
-    calc_dollar_bonus = function(self, card)
-		local bonus = G.GAME.consumeable_usage_total
-            and G.GAME.consumeable_usage_total.spectral * card.ability.extra.money_mod
-            or 0
-		if bonus > 0 then return bonus end
-	end,
+    calculate = function(self, card, context)
+        if context.buying_card then
+            card.ability.extra.shop_skipped = false
+        end
+        if context.ending_shop then
+            if card.ability.extra.shop_skipped then
+                add_tag(Tag('tag_ethereal'))
+            end
+            card.ability.extra.shop_skipped = true
+        end
+    end,
 
     loc_vars = function(self, info_queue, card)
-        return { vars = {
-            G.GAME.consumeable_usage_total
-                and G.GAME.consumeable_usage_total.spectral * card.ability.extra.money_mod
-                or 0,
-            card.ability.extra.money_mod,
-        }}
+        info_queue[#info_queue+1] = {key = 'tag_ethereal', set = 'Tag'}
+        info_queue[#info_queue+1] = G.P_CENTERS.p_spectral_normal_1
+        return { }
     end,
 }

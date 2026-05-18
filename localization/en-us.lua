@@ -19,9 +19,10 @@ return {
             j_cl_ghost = {
                 name = "Ghost Joker",
                 text = {
-                    "Earn {C:money}$#2#{} at the end of round",
-                    "per {C:spectral}Spectral{} card used this run",
-                    "{C:inactive}(Currently {C:money}$#1#{C:inactive})"
+                    "Create {C:spectral}Etheral Tag{}",
+                    "after {C:attention}Shop{} is skipped",
+                    "with no purchases"
+                    
                 },
             },
             j_cl_futuristic = {
@@ -81,6 +82,37 @@ return {
                     "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips and {C:mult}+#2#{C:inactive} Mult){}"
                 },
             },
+            j_cl_mult = {
+                name = "Mult Joker",
+                text = {
+                    "Every played {C:attention}Mult card{}",
+                    "permamently gains",
+                    "{C:mult}+#1#{} Mult when scored"
+                }
+            },
+            j_cl_dealer = {
+                name = "Dealer",
+                text = {
+                    "When {C:attention}Blind{} is selected,",
+                    "shuffle {C:attention}enhanced cards{}",
+                    "on top of the deck"
+                }
+            },
+            j_cl_knight = {
+                name = "Knight",
+                text = {
+                    "When {C:attention}Boss Blind{} is selected,",
+                    "gain {C:blue}+#1#{} hands"
+                }
+            },
+            j_cl_recycled = {
+                name = "Recycled Joker",
+                text = {
+                    "{C:red}+#2#{} Discard next round",
+                    "per shop reroll",
+                    "{C:inactive}(Currently {C:red}+#1#{C:inactive} discards){}"
+                }
+            },
             j_cl_caleidoscope = {
                 name = "Caleidoscope",
                 text = {
@@ -109,7 +141,7 @@ return {
                 },
             },
             j_cl_magician = {
-                name = "Magician Joker",
+                name = "Magician",
                 text = {
                     "At the end of round tranform",
                     "non-legendary {C:attention}Joker{} to the right",

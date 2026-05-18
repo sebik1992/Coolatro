@@ -19,9 +19,9 @@ return {
             j_cl_ghost = {
                 name = "Joker Duch",
                 text = {
-                    "Zdobądź {C:money}$#2#{} na koniec rundy",
-                    "za każdą użytą kartę {C:spectral}ducha{} w tej grze",
-                    "{C:inactive}(Obecnie {C:money}$#1#{C:inactive})"
+                    "Utwórz {C:spectral}Znacznik eteryczny{}",
+                    "jeśli pominiesz {C:attention}sklep{}",
+                    "bez zakupów"
                 },
             },
             j_cl_futuristic = {
@@ -81,6 +81,37 @@ return {
                     "{C:inactive}(Obecnie {C:chips}+#1#{C:inactive} Żet. i {C:mult}+#2#{C:inactive} Mnoż.){}"
                 },
             },
+            j_cl_mult = {
+                name = "Mult Joker",
+                text = {
+                    "Każda zagrana {C:attention}karta Mnoż.{}",
+                    "zyskuje na stałe",
+                    "{C:mult}+#1#{} Mnoż. gdy punktuje"
+                }
+            },
+            j_cl_dealer = {
+                name = "Diler",
+                text = {
+                    "Po wybraniu {C:attention}Przeszkadzajki{}",
+                    "przetasuj {C:attention}ulepszone karty{}",
+                    "na wierzch talii"
+                }
+            },
+            j_cl_knight = {
+                name = "Rycerz",
+                text = {
+                    "Po wybraniu {C:attention}Przeszkadzajki bossa{}",
+                    "otrzymaj {C:blue}+#1#{} ręce"
+                }
+            },
+            j_cl_recycled = {
+                name = "Joker z recyklingu,
+                text = {
+                    "{C:red}+#2#{} zrzutka w następnej rundzie za",
+                    "każde przelosowanie sklepu",
+                    "{C:inactive}(Obecnie {C:red}+#1#{C:inactive} zrzutek)"
+                }
+            },
             j_cl_caleidoscope = {
                 name = "Kalejdoskop",
                 text = {
@@ -109,7 +140,7 @@ return {
                 }
             },
             j_cl_magician = {
-                name = "Joker Magik",
+                name = "Magik",
                 text = {
                     "Na koniec rundy rundy zamienia",
                     "nielegendarnego {C:attention}Jokera{} na prawo",
