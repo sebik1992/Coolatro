@@ -10,7 +10,7 @@ SMODS.Joker{
     config = { extra = { boss_hands = 3 } },
     pos = { x = 0, y = 0 },
     rarity = 1,
-    cost = 5,
+    cost = 3,
     blueprint_compat = true,
     eternal_compat = true,
     unlocked = true,

@@ -22,9 +22,9 @@ SMODS.Joker{
         and context.other_card.ability.effect == "Mult Card" then
             context.other_card.ability.mult = context.other_card.ability.mult + card.ability.extra.mult_mod
             return {
-                extra = { message = localize{type = 'variable', key = 'a_mult', vars = {card.ability.extra.mult_mod}}, colour = G.C.MULT },
-                colour = G.C.MULT,
-                card = self
+                mult = card.ability.extra.mult_mod,
+                message = localize('k_upgrade_ex'),
+                colour = G.C.MULT
             }
         end
     end,

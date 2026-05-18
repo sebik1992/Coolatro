@@ -86,7 +86,7 @@ return {
                 text = {
                     "Każda zagrana {C:attention}karta Mnoż.{}",
                     "zyskuje na stałe",
-                    "{C:mult}+#1#{} Mnoż. gdy punktuje"
+                    "{C:mult}+#1#{} Mnoż. przy zagraniu"
                 }
             },
             j_cl_dealer = {
@@ -100,12 +100,13 @@ return {
             j_cl_knight = {
                 name = "Rycerz",
                 text = {
-                    "Po wybraniu {C:attention}Przeszkadzajki bossa{}",
+                    "Po wybraniu",
+                    "{C:attention}Przeszkadzajki Bossa{}",
                     "otrzymaj {C:blue}+#1#{} ręce"
                 }
             },
             j_cl_recycled = {
-                name = "Joker z recyklingu,
+                name = "Joker z recyklingu",
                 text = {
                     "{C:red}+#2#{} zrzutka w następnej rundzie za",
                     "każde przelosowanie sklepu",
@@ -164,6 +165,7 @@ return {
             a_abracadabra="Abrakadabra!",
             a_watered="Podlane!",
             a_plant_maxed="(osiągnięto maksimum)",
+            a_reshuffled="Przetasowano",
             a_right="prawo",
             a_left="lewo",
             a_pop="Puf!",

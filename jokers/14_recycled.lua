@@ -21,7 +21,7 @@ SMODS.Joker{
         if context.reroll_shop and not context.blueprint then
             card.ability.extra.discards = card.ability.extra.discards + card.ability.extra.discard_mod
             card_eval_status_text(card, 'extra', nil, nil, nil, {
-                message = localize{type = 'variable', key = 'a_discard', vars = {card.ability.extra.discard_mod}},
+                message = localize('k_upgrade_ex'),
                 colour = G.C.RED
             })
         end
@@ -32,7 +32,7 @@ SMODS.Joker{
                 G.E_MANAGER:add_event(Event({func = function()
                     ease_discard(pending)
                     card_eval_status_text(card, 'extra', nil, nil, nil, {
-                        message = localize{type = 'variable', key = 'a_discard', vars = {pending}},
+                        message = localize('k_reset'),
                         colour = G.C.RED
                     })
                     return true

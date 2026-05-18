@@ -7,10 +7,10 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "dealer",
-    config = { extra = {} },
+    config = { },
     pos = { x = 0, y = 0 },
-    rarity = 2,
-    cost = 6,
+    rarity = 1,
+    cost = 7,
     blueprint_compat = false,
     eternal_compat = true,
     unlocked = true,
@@ -47,7 +47,7 @@ SMODS.Joker{
                 end
 
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
-                    message = localize('k_deal'),
+                    message = localize('a_reshuffled'),
                     colour = G.C.GREEN
                 })
                 return true

@@ -101,14 +101,15 @@ return {
             j_cl_knight = {
                 name = "Knight",
                 text = {
-                    "When {C:attention}Boss Blind{} is selected,",
+                    "When {C:attention}Boss Blind{}",
+                    "is selected,",
                     "gain {C:blue}+#1#{} hands"
                 }
             },
             j_cl_recycled = {
                 name = "Recycled Joker",
                 text = {
-                    "{C:red}+#2#{} Discard next round",
+                    "{C:red}+#2#{} discard next round",
                     "per shop reroll",
                     "{C:inactive}(Currently {C:red}+#1#{C:inactive} discards){}"
                 }
@@ -165,12 +166,12 @@ return {
             a_abracadabra="Abracadabra!",
             a_watered="Watered!",
             a_plant_maxed="(max reached)",
+            a_reshuffled="Reshuffled",
             a_right="right",
             a_left="left",
             a_pop="Pop!",
             a_cards="cards",
             a_tag="tag",
-
         }
     }
 }
