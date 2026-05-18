@@ -60,8 +60,8 @@ SMODS.Joker{
 
     loc_vars = function(self, info_queue, card)
         return { vars = {
-            card.ability.extra.tarrot_rank,
-            card.ability.extra.planet_rank,
+            G.localization.misc.ranks[card.ability.extra.tarrot_rank],
+            G.localization.misc.ranks[card.ability.extra.planet_rank],
             card.ability.extra.prob_top * (G.GAME and G.GAME.probabilities.normal or 1),
             card.ability.extra.prob_bottom,
         }}

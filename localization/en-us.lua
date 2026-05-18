@@ -94,8 +94,9 @@ return {
                 name = "Dealer",
                 text = {
                     "When {C:attention}Blind{} is selected,",
-                    "shuffle {C:attention}enhanced cards{}",
-                    "on top of the deck"
+                    "shuffle all {C:attention}#1#s{}",
+                    "at top of the deck",
+                    "{C:inactive}(Rank changes each round){}",
                 }
             },
             j_cl_knight = {

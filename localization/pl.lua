@@ -93,8 +93,9 @@ return {
                 name = "Diler",
                 text = {
                     "Po wybraniu {C:attention}Przeszkadzajki{}",
-                    "przetasuj {C:attention}ulepszone karty{}",
-                    "na wierzch talii"
+                    "umieść karty z rangą {C:attention}#1#{}",
+                    "na wierzchu talii",
+                    "(Ranga zmienia się co rundę)"
                 }
             },
             j_cl_knight = {
