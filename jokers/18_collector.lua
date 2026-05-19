@@ -1,6 +1,12 @@
---[[
+SMODS.Atlas({
+    key = "collector",
+    path = "j_cl_collector.png",
+    px = 71,
+    py = 95
+})
+
 SMODS.Joker{
-    key = "xx_ghost_retired",
+    key = "collector",
     config = { extra = { money_mod = 2 } },
     pos = { x = 0, y = 0 },
     rarity = 1,
@@ -10,7 +16,7 @@ SMODS.Joker{
     unlocked = true,
     discovered = true,
     effect = nil,
-    atlas = 'ghost',
+    atlas = 'collector',
     soul_pos = nil,
 
     calc_dollar_bonus = function(self, card)
@@ -29,4 +35,3 @@ SMODS.Joker{
         }}
     end,
 }
-]]--
