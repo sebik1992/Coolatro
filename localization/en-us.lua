@@ -138,6 +138,15 @@ return {
                     "{C:attention}#1#{} additional times"
                 }
             },
+            j_cl_collector = {
+                name = "Collector",
+                text = {
+                    "Earn {C:money}$#2#{} at end of",
+                    "round per {C:inactive}Standard pack{}",
+                    "opened this run",
+                    "{C:inactive}(Currently {C:money}$#1#{C:inactive}){}"
+                }
+            },
             j_cl_caleidoscope = {
                 name = "Caleidoscope",
                 text = {

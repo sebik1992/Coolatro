@@ -7,7 +7,7 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "collector",
-    config = { extra = { money_mod = 2 } },
+    config = { extra = { money_mod = 1 } },
     pos = { x = 0, y = 0 },
     rarity = 1,
     cost = 4,
