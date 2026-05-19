@@ -97,6 +97,15 @@ return {
                     "otrzymaj {C:blue}+#1#{} ręce"
                 }
             },
+            j_cl_jackpot = {
+                name = "Jackpot",
+                text = {
+                    "Punktujace {C:attention}7ki{} mają",
+                    "{C:green}#1# na #2#{} szans na dodanie wersji {C:dark_edition}w folii{},",
+                    "{C:dark_edition}holograficznej{} lub {C:dark_edition}polichromowanej{}",
+                    "do losowego {C:attention}Jokera{}"
+                }
+            },
             j_cl_reclaimed = {
                 name = "Joker z recyklingu",
                 text = {
@@ -119,6 +128,13 @@ return {
                     "Podnieś najniższą",
                     "rangę punktujących",
                     "kart o {C:attention}1{}"
+                }
+            },
+            j_cl_rock_n_roll = {
+                name = "Rock'n'roll",
+                text = {
+                    "{C:attention}Kamienne karty{} aktywują się",
+                    "{C:attention}#1#{} dodatkowe razy"
                 }
             },
             j_cl_caleidoscope = {
@@ -198,6 +214,8 @@ return {
             a_pop="Puf!",
             a_cards="karty",
             a_tag="znacznik",
+            a_sacrificed="Poświęcone!",
+            a_jackpot="Jackpot!",
         }
     }
 }

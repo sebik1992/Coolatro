@@ -98,6 +98,15 @@ return {
                     "gain {C:blue}+#1#{} hands"
                 }
             },
+            j_cl_jackpot = {
+                name = "Jackpot",
+                text = {
+                    "Scored {C:attention}7s{} have",
+                    "{C:green}#1# in #2#{} chance to add {C:dark_edition}Foil{},",
+                    "{C:dark_edition}Holographic{} or {C:dark_edition}Polychrome{}",
+                    "edition to a random {C:attention}Joker{}"
+                }
+            },
             j_cl_reclaimed = {
                 name = "Reclaimed Joker",
                 text = {
@@ -120,6 +129,13 @@ return {
                     "Increase lowest",
                     "rank of scored",
                     "cards by {C:attention}1{}"
+                }
+            },
+            j_cl_rock_n_roll = {
+                name = "Rock'n'roll",
+                text = {
+                    "{C:attention}Stone Cards{} trigger",
+                    "{C:attention}#1#{} additional times"
                 }
             },
             j_cl_caleidoscope = {
@@ -199,6 +215,7 @@ return {
             a_cards="cards",
             a_tag="tag",
             a_sacrificed="Sacrificed!",
+            a_jackpot="Jackpot!",
         }
     }
 }

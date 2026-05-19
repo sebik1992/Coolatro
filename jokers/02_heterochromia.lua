@@ -25,11 +25,13 @@ SMODS.Joker{
             local red_suits_count = 0
 
             for _, c in ipairs(context.full_hand) do
-                if c.base.suit == "Spades" or c.base.suit == "Clubs" then
-                    black_suits_count = black_suits_count + 1
-                end
-                if c.base.suit == "Hearts" or c.base.suit == "Diamonds" then
-                    red_suits_count = red_suits_count + 1
+                if c.ability.effect ~= 'Stone Card' then
+                    if c.base.suit == "Spades" or c.base.suit == "Clubs" then
+                        black_suits_count = black_suits_count + 1
+                    end
+                    if c.base.suit == "Hearts" or c.base.suit == "Diamonds" then
+                        red_suits_count = red_suits_count + 1
+                    end
                 end
             end
 
