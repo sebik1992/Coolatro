@@ -40,9 +40,9 @@ SMODS.Joker{
                     if c:get_id() == min_id then
                         local suit_prefix = string.sub(c.base.suit, 1, 1)..'_'
                         c:set_base(G.P_CARDS[suit_prefix..rank_suffix])
+                        card_eval_status_text(c, 'jokers', nil, nil, nil, { message = localize('k_upgrade_ex'), colour = G.C.ORANGE })
                     end
                 end
-                return { message = localize('k_upgrade_ex'), colour = G.C.ORANGE }
             end
         end
     end,

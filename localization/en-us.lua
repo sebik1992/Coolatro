@@ -110,14 +110,16 @@ return {
                 name = "Secret Agent",
                 text = {
                     "{X:mult,C:white} X#1# {} Mult if",
-                    "no {C:attention}face{} cards held in hand"
+                    "no {C:attention}face{} cards",
+                    "held in hand"
                 }
             },
             j_cl_gym = {
                 name = "Gym",
                 text = {
-                    "Increase lowest rank of",
-                    "scored cards by {C:attention}1{}"
+                    "Increase lowest",
+                    "rank of scored",
+                    "cards by {C:attention}1{}"
                 }
             },
             j_cl_caleidoscope = {

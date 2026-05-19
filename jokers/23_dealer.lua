@@ -18,7 +18,7 @@ SMODS.Joker{
     atlas = 'dealer',
 
     calculate = function(self, card, context)
-        if context.end_of_round and not context.blueprint then
+        if context.end_of_round and not context.blueprint and not (context.individual or context.repetition) then
             local seen_ranks = {}
             for _, r in ipairs(G._cl_.RANK_POOL) do
                 for _, c in ipairs(G.playing_cards) do
@@ -31,7 +31,7 @@ SMODS.Joker{
             if #seen_ranks > 0 then
                 card.ability.extra.active_rank = pseudorandom_element(seen_ranks, pseudoseed('dealer_rank_pick'))
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
-                    message = G.localization.misc.ranks[rank],
+                    message = G.localization.misc.ranks[card.ability.extra.active_rank],
                     colour = G.C.GREEN
                 })
             end
