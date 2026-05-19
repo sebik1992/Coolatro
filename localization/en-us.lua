@@ -102,7 +102,7 @@ return {
                 name = "Reclaimed Joker",
                 text = {
                     "{C:red}+#2#{} discard next round",
-                    "per shop reroll",
+                    "per {C:attention}reroll{} in the shop",
                     "{C:inactive}(Currently {C:red}+#1#{C:inactive} discards){}"
                 }
             },
@@ -149,6 +149,15 @@ return {
                     "{C:inactive}(Must have room){}"
                 },
             },
+            j_cl_blood_magic = {
+                name = "Blood Magic",
+                text = {
+                    "If excatly 2 scored cards",
+                    "are {C:hearts}Hearts{}, sacrifice",
+                    "one and gain its {C:chips}Chips{}",
+                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips){}"
+                }
+            },
             j_cl_dealer = {
                 name = "Dealer",
                 text = {
@@ -189,6 +198,7 @@ return {
             a_pop="Pop!",
             a_cards="cards",
             a_tag="tag",
+            a_sacrificed="Sacrificed!",
         }
     }
 }

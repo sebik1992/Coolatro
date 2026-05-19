@@ -82,20 +82,11 @@ return {
                 },
             },
             j_cl_mult = {
-                name = "Mult Joker",
+                name = "Mnoż-Joker",
                 text = {
                     "Każda zagrana {C:attention}karta Mnoż.{}",
                     "zyskuje na stałe",
                     "{C:mult}+#1#{} Mnoż. przy zagraniu"
-                }
-            },
-            j_cl_dealer = {
-                name = "Diler",
-                text = {
-                    "Po wybraniu {C:attention}Przeszkadzajki{}",
-                    "umieść karty z rangą {C:attention}#1#{}",
-                    "na wierzchu talii",
-                    "(Ranga zmienia się co rundę)"
                 }
             },
             j_cl_knight = {
@@ -106,12 +97,28 @@ return {
                     "otrzymaj {C:blue}+#1#{} ręce"
                 }
             },
-            j_cl_recycled = {
+            j_cl_reclaimed = {
                 name = "Joker z recyklingu",
                 text = {
                     "{C:red}+#2#{} zrzutka w następnej rundzie za",
                     "każde przelosowanie sklepu",
                     "{C:inactive}(Obecnie {C:red}+#1#{C:inactive} zrzutek)"
+                }
+            },
+            j_cl_secret_agent = {
+                name = "Tajniak",
+                text = {
+                    "{X:mult,C:white} X#1# {} Mnoż. jeśli",
+                    "nie ma kart z {C:attention}figurą{}",
+                    "trzymanych na ręce"
+                }
+            },
+            j_cl_gym = {
+                name = "Siłka",
+                text = {
+                    "Podnieś najniższą",
+                    "rangę punktujących",
+                    "kart o {C:attention}1{}"
                 }
             },
             j_cl_caleidoscope = {
@@ -139,6 +146,25 @@ return {
                     "{C:red}zmniejszają{} poziom układu oraz",
                     "tworzą kartę ducha {C:spectral}#1#{}",
                     "{C:inactive}(wymaga miejsca){}"
+                }
+            },
+            j_cl_blood_magic = {
+                name = "Magia Krwi",
+                text = {
+                    "Jeśli zagrywana ręka zawiera",
+                    "dokładnie 2 karty {C:hearts}Kier{},",
+                    "poświęć losową z nich",
+                    "i dodaj wartość do {C:chips}Żet.{}",
+                    "{C:inactive}(Obecnie {C:chips}+#1#{C:inactive} Żet.){}"
+                }
+            },
+            j_cl_dealer = {
+                name = "Diler",
+                text = {
+                    "Po wybraniu {C:attention}Przeszkadzajki{}",
+                    "umieść karty z rangą {C:attention}#1#{}",
+                    "na wierzchu talii",
+                    "{C:inactive}(Ranga zmienia się co rundę){}"
                 }
             },
             j_cl_magician = {
