@@ -1,12 +1,12 @@
 SMODS.Atlas({
-    key = "recycled",
-    path = "j_cl_mult.png", --todo: recycled graphic
+    key = "reclaimed",
+    path = "j_cl_reclaimed.png",
     px = 71,
     py = 95
 })
 
 SMODS.Joker{
-    key = "recycled",
+    key = "reclaimed",
     config = { extra = { discards = 0, discard_mod = 1 } },
     pos = { x = 0, y = 0 },
     rarity = 1,
@@ -15,7 +15,7 @@ SMODS.Joker{
     eternal_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'recycled',
+    atlas = 'reclaimed',
 
     calculate = function(self, card, context)
         if context.reroll_shop and not context.blueprint then

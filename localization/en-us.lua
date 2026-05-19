@@ -90,15 +90,6 @@ return {
                     "{C:mult}+#1#{} Mult when scored"
                 }
             },
-            j_cl_dealer = {
-                name = "Dealer",
-                text = {
-                    "When {C:attention}Blind{} is selected,",
-                    "shuffle all {C:attention}#1#s{}",
-                    "at top of the deck",
-                    "{C:inactive}(Rank changes each round){}",
-                }
-            },
             j_cl_knight = {
                 name = "Knight",
                 text = {
@@ -107,12 +98,26 @@ return {
                     "gain {C:blue}+#1#{} hands"
                 }
             },
-            j_cl_recycled = {
-                name = "Recycled Joker",
+            j_cl_reclaimed = {
+                name = "Reclaimed Joker",
                 text = {
                     "{C:red}+#2#{} discard next round",
                     "per shop reroll",
                     "{C:inactive}(Currently {C:red}+#1#{C:inactive} discards){}"
+                }
+            },
+            j_cl_secret_agent = {
+                name = "Secret Agent",
+                text = {
+                    "{X:mult,C:white} X#1# {} Mult if",
+                    "no {C:attention}face{} cards held in hand"
+                }
+            },
+            j_cl_gym = {
+                name = "Gym",
+                text = {
+                    "Increase lowest rank of",
+                    "scored cards by {C:attention}1{}"
                 }
             },
             j_cl_caleidoscope = {
@@ -141,6 +146,15 @@ return {
                     "create {C:spectral}#1#{} spectral card",
                     "{C:inactive}(Must have room){}"
                 },
+            },
+            j_cl_dealer = {
+                name = "Dealer",
+                text = {
+                    "When {C:attention}Blind{} is selected,",
+                    "shuffle all {C:attention}#1#s{}",
+                    "at top of the deck",
+                    "{C:inactive}(Rank changes each round){}",
+                }
             },
             j_cl_magician = {
                 name = "Magician",
