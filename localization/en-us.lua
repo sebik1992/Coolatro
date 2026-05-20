@@ -139,12 +139,12 @@ return {
                 }
             },
             j_cl_collector = {
-                name = "Collector",
+                name = "Collector Stamp",
                 text = {
-                    "Earn {C:money}$#2#{} at end of",
-                    "round per {C:inactive}Standard pack{}",
-                    "opened this run",
-                    "{C:inactive}(Currently {C:money}$#1#{C:inactive}){}"
+                    "Gain {C:attention}sell value{}",
+                    "from {C:attention}rank{} value of",
+                    "cards opened from",
+                    "{C:attention}Standard packs{}"
                 }
             },
             j_cl_caleidoscope = {
@@ -181,6 +181,16 @@ return {
                     "are {C:hearts}Hearts{}, sacrifice",
                     "one and gain its {C:chips}Chips{}",
                     "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips){}"
+                }
+            },
+            j_cl_bar_code = {
+                name = "Bar Code",
+                text = {
+                    "If excatly 2 scored cards",
+                    "are {C:diamonds}Diamonds{}, add {C:money}$#2#{}",
+                    "to payout and earn it,",
+                    "resets each {C:attention}Ante{}",
+                    "{C:inactive}(Currently {C:money}$#1#{C:inactive}){}"
                 }
             },
             j_cl_dealer = {
