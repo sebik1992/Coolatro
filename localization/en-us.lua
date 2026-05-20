@@ -138,12 +138,12 @@ return {
                     "{C:attention}#1#{} additional times"
                 }
             },
-            j_cl_collector = {
+            j_cl_collector_stamp = {
                 name = "Collector Stamp",
                 text = {
-                    "Gain {C:attention}sell value{}",
-                    "from {C:attention}rank{} value of",
-                    "cards opened from",
+                    "Increase {C:attention}sell value{}",
+                    "by {C:chips}Chips{} (maximum {C:money}$20{})",
+                    "of cards opened from",
                     "{C:attention}Standard packs{}"
                 }
             },
@@ -199,7 +199,7 @@ return {
                     "When {C:attention}Blind{} is selected,",
                     "shuffle all {C:attention}#1#s{}",
                     "at top of the deck",
-                    "{C:inactive}(Rank changes each round){}",
+                    "Rank changes each round"
                 }
             },
             j_cl_magician = {

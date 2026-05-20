@@ -137,6 +137,15 @@ return {
                     "{C:attention}#1#{} dodatkowe razy"
                 }
             },
+            j_cl_collector_stamp = {
+                name = "Znaczek Kolekcjonerski",
+                text = {
+                    "Dodaj do {C:attention}ceny sprzedaży{}",
+                    "wartość {C:chips}Żet.{} (maksymalnie {C:money}$20{})",
+                    "kart otwieranych z",
+                    "{C:attention}Paczek standardowych{}"
+                }
+            },
             j_cl_caleidoscope = {
                 name = "Kalejdoskop",
                 text = {
@@ -174,13 +183,23 @@ return {
                     "{C:inactive}(Obecnie {C:chips}+#1#{C:inactive} Żet.){}"
                 }
             },
+            j_cl_bar_code = {
+                name = "Kod Kreskowy",
+                text = {
+                    "Jeśli zagrywana ręka zawiera",
+                    "dokładnie 2 karty {C:diamonds}Karo{}, zwiększ ",
+                    "wypłatę o {C:money}$#2#{} i pobierz ją,",
+                    "resetuje się po każdym {C:attention}Wejściu{}",
+                    "{C:inactive}(Obecnie {C:money}$#1#{C:inactive}){}"
+                }
+            },
             j_cl_dealer = {
                 name = "Diler",
                 text = {
                     "Po wybraniu {C:attention}Przeszkadzajki{}",
                     "umieść karty z rangą {C:attention}#1#{}",
                     "na wierzchu talii",
-                    "{C:inactive}(Ranga zmienia się co rundę){}"
+                    "Ranga zmienia się co rundę"
                 }
             },
             j_cl_magician = {
