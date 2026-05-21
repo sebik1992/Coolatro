@@ -208,7 +208,7 @@ return {
                     "Jeśli zagrywana ręka zawiera",
                     "dokładnie 2 karty {C:spades}Pik{} #2# razy,",
                     "stwórz {C:attention}Znacznik Kuponu{}",
-                    "{C:inactive}(Obecnie {X:attention}#1#{C:inactive}/#2#){}"
+                    "{C:inactive}(Obecnie {C:attention}#1#{C:inactive}/#2#){}"
                 }
             },
             j_cl_dealer = {

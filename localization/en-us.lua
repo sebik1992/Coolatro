@@ -208,7 +208,15 @@ return {
                     "If excatly 2 scored cards",
                     "are {C:spades}Spades{} #2# times,",
                     "create a {C:attention}Voucher Tag{}",
-                    "{C:inactive}(Currently {X:attention}#1#{C:inactive}/#2#){}"
+                    "{C:inactive}(Currently {C:attention}#1#{C:inactive}/#2#){}"
+                }
+            },
+            j_cl_legendary = {
+                name = "Jkr Co. Supply Pack Key",
+                text = {
+                    "All {C:attention}Booster Packs{}",
+                    "have {C:green}#1# in #2#{} chance",
+                    "to contain {C:legendary}Legendary Joker{}"
                 }
             },
             j_cl_dealer = {
