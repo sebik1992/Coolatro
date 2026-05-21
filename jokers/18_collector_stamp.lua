@@ -32,7 +32,7 @@ SMODS.Joker{
             end
             card:set_cost()
             card_eval_status_text(card, 'extra', nil, nil, nil, {
-                message = localize('k_upgrade_ex'),
+                message = localize('k_val_up'),
                 colour = G.C.GOLD,
             })
             if not (G.GAME.pack_choices and G.GAME.pack_choices > 1) then

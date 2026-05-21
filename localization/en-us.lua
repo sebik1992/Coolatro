@@ -193,6 +193,23 @@ return {
                     "{C:inactive}(Currently {C:money}$#1#{C:inactive}){}"
                 }
             },
+            j_cl_clover_solution = {
+                name = "Clover Solution",
+                text = {
+                    "If excatly 2 scored cards",
+                    "are {C:clubs}Clubs{}, double {C:green}propabilities{}",
+                    "until next {C:attention}Blind{} is selected",
+                    "{C:inactive}(Currently {X:green,C:white} X#1# {C:inactive}){}"
+                }
+            },
+            j_cl_sth_sth_spade = {
+                name = "tbd",
+                text = {
+                    "If excatly 2 scored cards",
+                    "are {C:spades}Spades{}, {C:green}1 in 4{}",
+                    "chance to create a {C:attention}Vouncher Tag{}}"
+                }
+            },
             j_cl_dealer = {
                 name = "Dealer",
                 text = {
