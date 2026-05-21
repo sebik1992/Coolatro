@@ -18,7 +18,7 @@ SMODS.Joker{
     atlas = 'ghost',
 
     calculate = function(self, card, context)
-        if context.buying_card then
+        if context.buying_card or context.open_booster then
             card.ability.extra.shop_skipped = false
         end
         if context.ending_shop then
