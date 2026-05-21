@@ -214,8 +214,8 @@ return {
             j_cl_supply_key = {
                 name = "Klucz do Paczki Jkr Co.",
                 text = {
-                    "Zawartość {C:attention}Paczek wzmacniających{}",
-                    "mają szasnę {C:green}#1# na #2#{}",
+                    "Zawartość z {C:attention}Paczek wzmacniających{}",
+                    "ma szasnę {C:green}#1# na #2#{}",
                     "by stać się {C:legendary}Legendarnym Jokerem{}"
                 }
             },
