@@ -147,9 +147,11 @@ return {
                 }
             },
             j_cl_sphagetti = {
-                name = "Sphagetti",
+                name = "Spagetti",
                 text = {
-                    "WHO TOUCHED MY SPAGETT?!"
+                    "Umieść {C:attention}Ulepszone karty{}",
+                    "na wierzchu talii",
+                    "na następne {C:attention}#1#{} rund"
                 }
             },
             j_cl_caleidoscope = {
