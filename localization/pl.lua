@@ -193,6 +193,24 @@ return {
                     "{C:inactive}(Obecnie {C:money}$#1#{C:inactive}){}"
                 }
             },
+            j_cl_clover_solution = {
+                name = "Fortunny Układ",
+                text = {
+                    "Jeśli zagrywana ręka zawiera",
+                    "dokładnie 2 karty {C:clubs}Trefl{}, podwój {C:green}prawdopodobieństwa{}",
+                    "do momentu wybrania kolejnej {C:attention}Przeszkadzajki{}",
+                    "{C:inactive}(Obecnie {X:green,C:white} X#1# {C:inactive}){}"
+                }
+            },
+            j_cl_vip_pass = {
+                name = "Przepustka VIP",
+                text = {
+                    "Jeśli zagrywana ręka zawiera",
+                    "dokładnie 2 karty {C:spades}Pik{} #2# razy,",
+                    "stwórz {C:attention}Znacznik Kuponu{}",
+                    "{C:inactive}(Obecnie {X:attention}#1#{C:inactive}/#2#){}"
+                }
+            },
             j_cl_dealer = {
                 name = "Diler",
                 text = {

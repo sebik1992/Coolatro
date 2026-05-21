@@ -202,12 +202,13 @@ return {
                     "{C:inactive}(Currently {X:green,C:white} X#1# {C:inactive}){}"
                 }
             },
-            j_cl_sth_sth_spade = {
-                name = "tbd",
+            j_cl_vip_pass = {
+                name = "VIP Pass",
                 text = {
                     "If excatly 2 scored cards",
-                    "are {C:spades}Spades{}, {C:green}1 in 4{}",
-                    "chance to create a {C:attention}Vouncher Tag{}}"
+                    "are {C:spades}Spades{} #2# times,",
+                    "create a {C:attention}Voucher Tag{}",
+                    "{C:inactive}(Currently {X:attention}#1#{C:inactive}/#2#){}"
                 }
             },
             j_cl_dealer = {
