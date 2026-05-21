@@ -10,6 +10,6 @@
   "priority": 0,
   "badge_colour": "1de619",
   "badge_text_colour": "",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "dependencies": ["Steamodded (>=1.0.0~BETA-0614a)"]
 }
