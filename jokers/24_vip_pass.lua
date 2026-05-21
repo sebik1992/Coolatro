@@ -7,7 +7,7 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "vip_pass",
-    config = { extra = { hands = 0, hand_req = 3 } },
+    config = { extra = { hands = 0, hand_req = 3, money_bonus = 5 } },
     pos = { x = 0, y = 0 },
     rarity = 2,
     cost = 5,
@@ -38,6 +38,7 @@ SMODS.Joker{
                     G.E_MANAGER:add_event(Event({
                         func = function()
                             add_tag(Tag('tag_voucher'))
+                            ease_dollars(card.ability.extra.money_bonus)
                             return true
                         end
                     }))
@@ -51,6 +52,7 @@ SMODS.Joker{
         return { vars = {
             card.ability.extra.hands,
             card.ability.extra.hand_req,
+            card.ability.extra.money_bonus,
         } }
     end,
 }

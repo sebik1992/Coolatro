@@ -215,7 +215,7 @@ return {
                 text = {
                     "Jeśli zagrywana ręka zawiera",
                     "dokładnie 2 karty {C:spades}Pik{} #2# razy,",
-                    "stwórz {C:attention}Znacznik Kuponu{}",
+                    "zyskaj {C:attention}Znacznik Kuponu{} i {C:money}$#3#{}",
                     "{C:inactive}(Obecnie {C:attention}#1#{C:inactive}/#2#){}"
                 }
             },
@@ -227,13 +227,12 @@ return {
                     "by stać się {C:legendary}Legendarnym Jokerem{}"
                 }
             },
-            j_cl_dealer = {
-                name = "Diler",
+            j_cl_bench = {
+                name = "Ławeczka",
                 text = {
-                    "Po wybraniu {C:attention}Przeszkadzajki{}",
-                    "umieść karty z rangą {C:attention}#1#{}",
-                    "na wierzchu talii",
-                    "Ranga zmienia się co rundę"
+                    "{X:mult,C:white} X#1# {} Mnoż. za",
+                    "każdy rodzaj karty w",
+                    "obszarze przedm. {C:attention}zużywalnych{}"
                 }
             },
             j_cl_magician = {

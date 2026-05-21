@@ -186,7 +186,7 @@ return {
             j_cl_blood_magic = {
                 name = "Blood Magic",
                 text = {
-                    "If excatly 2 scored cards",
+                    "If excatly two scored cards",
                     "are {C:hearts}Hearts{}, sacrifice",
                     "one and gain its {C:chips}Chips{}",
                     "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips){}"
@@ -195,8 +195,8 @@ return {
             j_cl_bar_code = {
                 name = "Bar Code",
                 text = {
-                    "If excatly 2 scored cards",
-                    "are {C:diamonds}Diamonds{}, add {C:money}$#2#{}",
+                    "If excatly two scored cards",
+                    "are {C:diamonds}Diamonds{}, earn {C:money}$#2#{}",
                     "to payout and earn it,",
                     "resets each {C:attention}Ante{}",
                     "{C:inactive}(Currently {C:money}$#1#{C:inactive}){}"
@@ -205,7 +205,7 @@ return {
             j_cl_clover_solution = {
                 name = "Clover Solution",
                 text = {
-                    "If excatly 2 scored cards",
+                    "If excatly two scored cards",
                     "are {C:clubs}Clubs{}, double {C:green}propabilities{}",
                     "until next {C:attention}Blind{} is selected",
                     "{C:inactive}(Currently {X:green,C:white} X#1# {C:inactive}){}"
@@ -214,9 +214,9 @@ return {
             j_cl_vip_pass = {
                 name = "VIP Pass",
                 text = {
-                    "If excatly 2 scored cards",
-                    "are {C:spades}Spades{} #2# times,",
-                    "create a {C:attention}Voucher Tag{}",
+                    "If excatly two scored cards",
+                    "are {C:spades}Spades{} #2# times, gain",
+                    "a {C:attention}Voucher Tag{} and {C:money}$#3#{}",
                     "{C:inactive}(Currently {C:attention}#1#{C:inactive}/#2#){}"
                 }
             },
@@ -228,19 +228,18 @@ return {
                     "to be a {C:legendary}Legendary Joker{}"
                 }
             },
-            j_cl_dealer = {
-                name = "Dealer",
+            j_cl_bench = {
+                name = "Bench",
                 text = {
-                    "When {C:attention}Blind{} is selected,",
-                    "shuffle all {C:attention}#1#s{}",
-                    "at top of the deck",
-                    "Rank changes each round"
+                    "{X:mult,C:white} X#1# {} Mult per",
+                    "card type in",
+                    "{C:attention}consumable{} area"
                 }
             },
             j_cl_magician = {
                 name = "Magician",
                 text = {
-                    "At the end of round tranform",
+                    "At the end of round transform",
                     "non-legendary {C:attention}Joker{} to the right",
                     "to another one of the same rarity"
                 },
