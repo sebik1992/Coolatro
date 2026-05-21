@@ -211,12 +211,12 @@ return {
                     "{C:inactive}(Currently {C:attention}#1#{C:inactive}/#2#){}"
                 }
             },
-            j_cl_legendary = {
+            j_cl_supply_key = {
                 name = "Jkr Co. Supply Pack Key",
                 text = {
-                    "All {C:attention}Booster Packs{}",
+                    "Contents of all {C:attention}Booster Packs{}",
                     "have {C:green}#1# in #2#{} chance",
-                    "to contain {C:legendary}Legendary Joker{}"
+                    "to be a {C:legendary}Legendary Joker{}"
                 }
             },
             j_cl_dealer = {

@@ -211,6 +211,14 @@ return {
                     "{C:inactive}(Obecnie {C:attention}#1#{C:inactive}/#2#){}"
                 }
             },
+            j_cl_supply_key = {
+                name = "Klucz do Paczki Jkr Co.",
+                text = {
+                    "Zawartość {C:attention}Paczek wzmacniających{}",
+                    "mają szasnę {C:green}#1# na #2#{}",
+                    "by stać się {C:legendary}Legendarnym Jokerem{}"
+                }
+            },
             j_cl_dealer = {
                 name = "Diler",
                 text = {

@@ -9,7 +9,7 @@ SMODS.Joker{
     key = "dealer",
     config = { extra = { active_rank = "Ace" } },
     pos = { x = 0, y = 0 },
-    rarity = 2,
+    rarity = 3,
     cost = 7,
     blueprint_compat = false,
     eternal_compat = true,
