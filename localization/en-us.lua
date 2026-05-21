@@ -2,17 +2,19 @@ return {
     descriptions = {
         Joker = {
             j_cl_patchwork = {
-                name = "Patchwork Joker",
+                name = "Patchwork",
                 text = {
-                    "{C:chips}+#1#{} Chips per unique {C:attention}Enchancement{}",
-                    "on scored or held cards",
+                    "{C:chips}+#1#{} Chips per unique",
+                    "{C:attention}Enchancement{} on",
+                    "scored or held cards",
                 },
             },
             j_cl_heterochromia = {
-                name = "Heterochromia Joker",
+                name = "Heterochromia",
                 text = {
-                    "{C:mult}+#2#{} Mult if played hand has equal",
-                    "number of {C:spades}black{} and {C:hearts}red{} cards",
+                    "{C:mult}+#2#{} Mult if played hand",
+                    "has equal number of",
+                    "{C:spades}black{} and {C:hearts}red{} cards",
                     "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult){}"
                 },
             },
@@ -20,13 +22,13 @@ return {
                 name = "Ghost Joker",
                 text = {
                     "Create {C:spectral}Etheral Tag{}",
-                    "after {C:attention}Shop{} is skipped",
+                    "after {C:attention}Shop{} is left",
                     "with no purchases"
                     
                 },
             },
-            j_cl_futuristic = {
-                name = "Futuristic Joker",
+            j_cl_flashforward = {
+                name = "Flashforward",
                 text = {
                     "Create {C:attention}Double Tag{}",
                     "after {C:attention}Blind{} is skipped"
@@ -49,19 +51,18 @@ return {
             j_cl_flea_market = {
                 name = "Flea Market",
                 text = {
-                    "Discarded {C:attention}#1#s{} have {C:green}#3# in #4#{} chance",
-                    "to create a {C:tarot}Tarot{} card",
-                    "Discarded {C:attention}#2#s{} have {C:green}#3# in #4#{} chance",
-                    "to create a {C:planet}Planet{} card",
-                    "Ranks change every round",
+                    "{C:green}#3# in #4#{} chance for discarded",
+                    "{C:attention}#1#s{} to create a {C:tarot}Tarot{} card,",
+                    "{C:attention}#2#s{} to create a {C:planet}Planet{} card,",
+                    "ranks change every round",
                     "{C:inactive}(Must have room){}"
                 },
             },
             j_cl_pinata = {
                 name = "Piñata",
                 text = {
-                    "Sell this card to add",
-                    "{C:dark_edition}Foil{}, {C:dark_edition}Holographic{} or {C:dark_edition}Polychrome{}",
+                    "Sell this to add {C:dark_edition}Foil{},",
+                    "{C:dark_edition}Holographic{} or {C:dark_edition}Polychrome{}",
                     "edition to cards in your deck",
                     "{C:attention}+#2#{} cards per round played",
                     "{C:inactive}(Currently {C:attention}#1#{C:inactive} cards){}"
@@ -150,15 +151,17 @@ return {
             j_cl_sphagetti = {
                 name = "Sphagetti",
                 text = {
-                    "WHO TOUCHED MY SPAGETT?!"
+                    "Shuffle all {C:attention}Enchanced{} cards",
+                    "at top of the deck",
+                    "for the next {C:attention}#1#{} rounds"
                 }
             },
             j_cl_caleidoscope = {
                 name = "Caleidoscope",
                 text = {
                     "If played hand is {C:attention}#3#{}",
-                    "this gains {X:mult,C:white} X#2# {} Mult",
-                    "and changes suit of played hand",
+                    "this gains {X:mult,C:white} X#2# {} Mult and",
+                    "changes suit of played hand",
                     "{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)"
                 },
             },
@@ -245,11 +248,11 @@ return {
             j_cl_pendulum = {
                 name = "Pendulum",
                 text = {
-                    "During Blind:",
-                    "Trigger thrice 2 jokers to the {C:attention}#1#{}",
-                    "{C:red}Debuff{} other jokers",
-                    "Direction swaps each hand",
-                    "{C:inactive}(Jokers fixed after Blind is selected){}"
+                    "During Blind trigger",
+                    "thrice 2 jokers to the {C:attention}#1#{},",
+                    "{C:red}debuff{} other jokers,",
+                    "direction swaps each hand",
+                    "{s:0.8,C:inactive}(Jokers fixed after Blind is selected){}"
                 },
             },
         }

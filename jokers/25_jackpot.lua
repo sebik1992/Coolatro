@@ -9,7 +9,7 @@ SMODS.Joker{
     key = "jackpot",
     config = { extra = { prob_top = 1, prob_bottom = 7 } },
     pos = { x = 0, y = 0 },
-    rarity = 1,
+    rarity = 2,
     cost = 7,
     blueprint_compat = true,
     eternal_compat = true,

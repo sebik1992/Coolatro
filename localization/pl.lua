@@ -2,7 +2,7 @@ return {
     descriptions = {
         Joker = {
             j_cl_patchwork = {
-                name = "Zszywany Joker",
+                name = "Zszywanka",
                 text = {
                     "{C:chips}+#1#{} Żet. za każde unikalne {C:attention}Ulepszenie{}",
                     "na zagrywanych kartach lub trzymanych na ręce",
@@ -20,12 +20,12 @@ return {
                 name = "Joker Duch",
                 text = {
                     "Utwórz {C:spectral}Znacznik eteryczny{}",
-                    "jeśli pominiesz {C:attention}sklep{}",
+                    "jeśli opuścisz {C:attention}sklep{}",
                     "bez zakupów"
                 },
             },
-            j_cl_futuristic = {
-                name = "Futurystyczny Joker",
+            j_cl_flashforward = {
+                name = "Przebłysk przyszłości",
                 text = {
                     "Utwórz {C:attention}Podwójny znacznik{}",
                     "po pominięciu {C:attention}Przeszkadzajki{}"

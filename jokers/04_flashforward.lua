@@ -1,12 +1,12 @@
 SMODS.Atlas({
-    key = "futuristic",
-    path = "j_cl_futuristic.png",
+    key = "flashforward",
+    path = "j_cl_flashforward.png",
     px = 71,
     py = 95
 })
 
 SMODS.Joker{
-    key = "futuristic",
+    key = "flashforward",
     config = { },
     pos = { x = 0, y = 0 },
     rarity = 1,
@@ -16,7 +16,7 @@ SMODS.Joker{
     unlocked = true,
     discovered = true,
     effect = nil,
-    atlas = 'futuristic',
+    atlas = 'flashforward',
     soul_pos = nil,
 
     calculate = function(self, card, context)

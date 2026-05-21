@@ -7,7 +7,7 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "heterochromia",
-    config = { extra = { mult = 0, mult_mod = 1 } },
+    config = { extra = { mult = 0, mult_mod = 2 } },
     pos = { x = 0, y = 0 },
     rarity = 1,
     cost = 4,
