@@ -42,7 +42,7 @@ return {
             j_cl_stamped_delivery = {
                 name = "Stamped Delivery",
                 text = {
-                    "{C:attention}4{}, {C:attention}5{}, {C:attention}6{} and {C:attention}7{} gain a random",
+                    "{C:attention}Numbered cards{} gain a random",
                     "{C:attention}seal{} when added to a deck"
                 },
             },
@@ -145,6 +145,12 @@ return {
                     "by {C:chips}Chips{} (maximum {C:money}$20{})",
                     "of cards opened from",
                     "{C:attention}Standard packs{}"
+                }
+            },
+            j_cl_sphagetti = {
+                name = "Sphagetti",
+                text = {
+                    "WHO TOUCHED MY SPAGETT?!"
                 }
             },
             j_cl_caleidoscope = {

@@ -41,7 +41,7 @@ return {
             j_cl_stamped_delivery = {
                 name = "Wysyłka z Pieczątką",
                 text = {
-                    "{C:attention}4{}, {C:attention}5{}, {C:attention}6{} i {C:attention}7{} otrzymują losową",
+                    "{C:attention}Karty numerowane{} otrzymują losową",
                     "{C:attention}pieczęć{} w momencie dodania do talii"
                 },
             },
@@ -144,6 +144,12 @@ return {
                     "wartość {C:chips}Żet.{} (maksymalnie {C:money}$20{})",
                     "kart otwieranych z",
                     "{C:attention}Paczek standardowych{}"
+                }
+            },
+            j_cl_sphagetti = {
+                name = "Sphagetti",
+                text = {
+                    "WHO TOUCHED MY SPAGETT?!"
                 }
             },
             j_cl_caleidoscope = {

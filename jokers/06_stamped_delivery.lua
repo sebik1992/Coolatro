@@ -24,7 +24,7 @@ SMODS.Joker{
             local seals = { 'Gold', 'Red', 'Blue', 'Purple' }
             for i, playing_card in ipairs(context.cards) do
                 local id = playing_card:get_id()
-                if id == 4 or id == 5 or id == 6 or id == 7 then
+                if id >= 2 and id <= 10 then
                     local chosen_seal = pseudorandom_element(seals, pseudoseed('stamp_factory_seal_'..i))
                     playing_card:set_seal(chosen_seal, true)
                     card_eval_status_text(card, 'extra', nil, nil, nil, { message = localize('k_upgrade_ex'), colour = G.C.GREEN })
