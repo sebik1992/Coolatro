@@ -56,7 +56,7 @@ SMODS.Joker{
                     card.ability.extra.rounds_left = card.ability.extra.rounds_left - 1
                     if card.ability.extra.rounds_left <= 0 then
                         card_eval_status_text(card, 'extra', nil, nil, nil, {
-                            message = tostring('k_eaten_ex'),
+                            message = localize('k_eaten_ex'),
                             colour = G.C.GREEN
                         })
                         card:start_dissolve()

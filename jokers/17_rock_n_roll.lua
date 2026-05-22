@@ -5,6 +5,11 @@ SMODS.Atlas({
     py = 95
 })
 
+SMODS.Sound{
+    key = "guitar_riff",
+    path = "cl_guitar_riff.ogg"
+}
+
 SMODS.Joker{
     key = "rock_n_roll",
     config = { extra = { repetitions = 3 } },
@@ -24,6 +29,7 @@ SMODS.Joker{
             if context.other_card.ability.effect == 'Stone Card' then
                 return {
                     message = localize('k_again_ex'),
+                    sound = 'cl_guitar_riff',
                     repetitions = card.ability.extra.repetitions,
                     card = context.other_card
                 }
