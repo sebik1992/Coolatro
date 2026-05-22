@@ -89,7 +89,7 @@ return {
                     "Every played {C:attention}Mult card{}",
                     "permamently gains",
                     "{C:mult}+#1#{} Mult when scored"
-                }
+                },
             },
             j_cl_knight = {
                 name = "Knight",
@@ -97,7 +97,7 @@ return {
                     "When {C:attention}Boss Blind{}",
                     "is selected,",
                     "gain {C:blue}+#1#{} hands"
-                }
+                },
             },
             j_cl_jackpot = {
                 name = "Jackpot",
@@ -106,7 +106,7 @@ return {
                     "{C:green}#1# in #2#{} chance to add {C:dark_edition}Foil{},",
                     "{C:dark_edition}Holographic{} or {C:dark_edition}Polychrome{}",
                     "edition to a random {C:attention}Joker{}"
-                }
+                },
             },
             j_cl_reclaimed = {
                 name = "Reclaimed Joker",
@@ -114,7 +114,7 @@ return {
                     "{C:red}+#2#{} discard next round",
                     "per {C:attention}reroll{} in the shop",
                     "{C:inactive}(Currently {C:red}+#1#{C:inactive} discards){}"
-                }
+                },
             },
             j_cl_secret_agent = {
                 name = "Secret Agent",
@@ -122,7 +122,7 @@ return {
                     "{X:mult,C:white} X#1# {} Mult if",
                     "no {C:attention}face{} cards",
                     "held in hand"
-                }
+                },
             },
             j_cl_gym = {
                 name = "Gym",
@@ -130,14 +130,14 @@ return {
                     "Increase lowest",
                     "rank of scored",
                     "cards by {C:attention}1{}"
-                }
+                },
             },
             j_cl_rock_n_roll = {
                 name = "Rock'n'roll",
                 text = {
                     "{C:attention}Stone Cards{} trigger",
                     "{C:attention}#1#{} additional times"
-                }
+                },
             },
             j_cl_collector_stamp = {
                 name = "Collector Stamp",
@@ -146,7 +146,7 @@ return {
                     "by {C:chips}Chips{} (maximum {C:money}$20{})",
                     "of cards opened from",
                     "{C:attention}Standard packs{}"
-                }
+                },
             },
             j_cl_sphagetti = {
                 name = "Sphagetti",
@@ -154,7 +154,7 @@ return {
                     "Shuffle all {C:attention}Enchanced{} cards",
                     "at top of the deck",
                     "for the next {C:attention}#1#{} rounds"
-                }
+                },
             },
             j_cl_caleidoscope = {
                 name = "Caleidoscope",
@@ -186,39 +186,38 @@ return {
             j_cl_blood_magic = {
                 name = "Blood Magic",
                 text = {
-                    "If excatly two scored cards",
-                    "are {C:hearts}Hearts{}, sacrifice",
-                    "one and gain its {C:chips}Chips{}",
+                    "When scoring 2-4 {C:hearts}Hearts{},",
+                    "sacrifice random one",
+                    "and gain its {C:chips}Chips{}",
                     "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips){}"
-                }
+                },
             },
             j_cl_bar_code = {
                 name = "Bar Code",
                 text = {
-                    "If excatly two scored cards",
-                    "are {C:diamonds}Diamonds{}, earn {C:money}$#2#{}",
-                    "to payout and earn it,",
+                    "When scoring 2-4 {C:diamonds}Diamonds{},",
+                    "{C:money}+$#2#{} to payout and earn it,",
                     "resets each {C:attention}Ante{}",
                     "{C:inactive}(Currently {C:money}$#1#{C:inactive}){}"
-                }
+                },
             },
             j_cl_clover_solution = {
                 name = "Clover Solution",
                 text = {
-                    "If excatly two scored cards",
-                    "are {C:clubs}Clubs{}, double {C:green}propabilities{}",
-                    "until next {C:attention}Blind{} is selected",
+                    "When scoring 2-4 {C:clubs}Clubs{},",
+                    "double {C:green}propabilities{} until",
+                    "next {C:attention}Blind{} is selected",
                     "{C:inactive}(Currently {X:green,C:white} X#1# {C:inactive}){}"
-                }
+                },
             },
             j_cl_vip_pass = {
                 name = "VIP Pass",
                 text = {
-                    "If excatly two scored cards",
-                    "are {C:spades}Spades{} #2# times, gain",
-                    "a {C:attention}Voucher Tag{} and {C:money}$#3#{}",
+                    "When scoring 2-4 {C:spades}Spades{}",
+                    "#2# times, gain a",
+                    "{C:attention}Voucher Tag{} and {C:money}$#3#{}",
                     "{C:inactive}(Currently {C:attention}#1#{C:inactive}/#2#){}"
-                }
+                },
             },
             j_cl_supply_key = {
                 name = "Jkr Co. Supply Pack Key",
@@ -226,7 +225,7 @@ return {
                     "Contents of all {C:attention}Booster Packs{}",
                     "have {C:green}#1# in #2#{} chance",
                     "to be a {C:legendary}Legendary Joker{}"
-                }
+                },
             },
             j_cl_bench = {
                 name = "Bench",
@@ -234,7 +233,7 @@ return {
                     "{X:mult,C:white} X#1# {} Mult per",
                     "card type in",
                     "{C:attention}consumable{} area"
-                }
+                },
             },
             j_cl_magician = {
                 name = "Magician",

@@ -27,7 +27,7 @@ SMODS.Joker{
                     table.insert(hearts, c)
                 end
             end
-            if #hearts == 2 then
+            if #hearts >= 2 and #hearts <= 4 then
                 local idx = pseudorandom(pseudoseed('blood_magic'), 1, 2)
                 local sacrifice = hearts[idx]
                 local gained = sacrifice:get_chip_bonus()

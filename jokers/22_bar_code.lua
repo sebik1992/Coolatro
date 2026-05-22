@@ -27,7 +27,7 @@ SMODS.Joker{
                     diamonds_no = diamonds_no + 1
                 end
             end
-            if diamonds_no == 2 then
+            if diamonds_no >= 2 and diamonds_no <= 4 then
                 card.ability.extra.payout = card.ability.extra.payout + card.ability.extra.payout_increase
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
                     message = localize('k_upgrade_ex'),

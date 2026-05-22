@@ -27,7 +27,7 @@ SMODS.Joker{
                     clubs_no = clubs_no + 1
                 end
             end
-            if clubs_no == 2 then
+            if clubs_no >= 2 and clubs_no <= 4 then
                 card.ability.extra.luck_mult = card.ability.extra.luck_mult * 2
                 for k, v in pairs(G.GAME.probabilities) do
                     G.GAME.probabilities[k] = v * 2

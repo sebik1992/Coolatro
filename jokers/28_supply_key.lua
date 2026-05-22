@@ -7,7 +7,7 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "supply_key",
-    config = { extra = { prob_top = 1, prob_bottom = 40 } },
+    config = { extra = { prob_top = 1, prob_bottom = 100 } },
     pos = { x = 0, y = 0 },
     rarity = 3,
     cost = 6,

@@ -184,8 +184,7 @@ return {
             j_cl_blood_magic = {
                 name = "Magia Krwi",
                 text = {
-                    "Jeśli zagrywana ręka zawiera",
-                    "dokładnie 2 karty {C:hearts}Kier{},",
+                    "Gdy punktują 2-4 karty {C:hearts}Kier{},",
                     "poświęć losową z nich",
                     "i dodaj wartość do {C:chips}Żet.{}",
                     "{C:inactive}(Obecnie {C:chips}+#1#{C:inactive} Żet.){}"
@@ -194,9 +193,8 @@ return {
             j_cl_bar_code = {
                 name = "Kod Kreskowy",
                 text = {
-                    "Jeśli zagrywana ręka zawiera",
-                    "dokładnie 2 karty {C:diamonds}Karo{}, zwiększ ",
-                    "wypłatę o {C:money}$#2#{} i pobierz ją,",
+                    "Gdy punktują 2-4 karty {C:diamonds}Karo{},",
+                    "zwiększ wypłatę o {C:money}$#2#{} i pobierz ją,",
                     "resetuje się po każdym {C:attention}Wejściu{}",
                     "{C:inactive}(Obecnie {C:money}$#1#{C:inactive}){}"
                 }
@@ -204,18 +202,18 @@ return {
             j_cl_clover_solution = {
                 name = "Fortunny Układ",
                 text = {
-                    "Jeśli zagrywana ręka zawiera",
-                    "dokładnie 2 karty {C:clubs}Trefl{}, podwój {C:green}prawdopodobieństwa{}",
-                    "do momentu wybrania kolejnej {C:attention}Przeszkadzajki{}",
+                    "Gdy punktują 2-4 karty {C:clubs}Trefl{},",
+                    "podwój {C:green}prawdopodobieństwa{} do",
+                    "momentu wybrania kolejnej {C:attention}Przeszkadzajki{}",
                     "{C:inactive}(Obecnie {X:green,C:white} X#1# {C:inactive}){}"
                 }
             },
             j_cl_vip_pass = {
                 name = "Przepustka VIP",
                 text = {
-                    "Jeśli zagrywana ręka zawiera",
-                    "dokładnie 2 karty {C:spades}Pik{} #2# razy,",
-                    "zyskaj {C:attention}Znacznik Kuponu{} i {C:money}$#3#{}",
+                    "Gdy punktują 2-4 karty {C:spades}Pik{}",
+                    "#2# razy, zyskaj",
+                    "{C:attention}Znacznik Kuponu{} i {C:money}$#3#{}",
                     "{C:inactive}(Obecnie {C:attention}#1#{C:inactive}/#2#){}"
                 }
             },

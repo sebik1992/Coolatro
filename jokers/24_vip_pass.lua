@@ -27,7 +27,7 @@ SMODS.Joker{
                     spades_no = spades_no + 1
                 end
             end
-            if spades_no == 2 then
+            if spades_no >= 2 and spades_no <= 4 then
                 card.ability.extra.hands = card.ability.extra.hands + 1
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
                     message = card.ability.extra.hands .. '/' .. card.ability.extra.hand_req,
