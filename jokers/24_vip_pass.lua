@@ -23,7 +23,7 @@ SMODS.Joker{
         if context.before and not context.blueprint then
             local spades_no = 0
             for _, c in ipairs(context.scoring_hand) do
-                if c.base.suit == 'Spades' or c.ability.effect == 'Wild Card' then
+                if c:is_suit('Spades') then
                     spades_no = spades_no + 1
                 end
             end

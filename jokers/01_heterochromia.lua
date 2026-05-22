@@ -28,7 +28,7 @@ SMODS.Joker{
 
             for _, c in ipairs(context.full_hand) do
                 if c.ability.effect ~= 'Stone Card' then
-                    if c.ability.effect == 'Wild Card' then
+                    if c.ability.name == 'Wild Card' then
                         wild_count = wild_count + 1
                     elseif c.base.suit == "Spades" or c.base.suit == "Clubs" then
                         black_suits_count = black_suits_count + 1

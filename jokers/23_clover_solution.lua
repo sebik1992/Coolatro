@@ -23,7 +23,7 @@ SMODS.Joker{
         if context.before and not context.blueprint then
             local clubs_no = 0
             for _, c in ipairs(context.scoring_hand) do
-                if c.base.suit == 'Clubs' or c.ability.effect == 'Wild Card' then
+                if c:is_suit('Clubs') then
                     clubs_no = clubs_no + 1
                 end
             end
