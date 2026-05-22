@@ -186,7 +186,7 @@ return {
             j_cl_blood_magic = {
                 name = "Blood Magic",
                 text = {
-                    "When scoring 2-4 {C:hearts}Hearts{},",
+                    "If 2-4 scoring {C:hearts}Hearts{} cards,",
                     "sacrifice random one",
                     "and gain its {C:chips}Chips{}",
                     "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips){}"
@@ -195,7 +195,7 @@ return {
             j_cl_bar_code = {
                 name = "Bar Code",
                 text = {
-                    "When scoring 2-4 {C:diamonds}Diamonds{},",
+                    "If 2-4 scoring {C:diamonds}Diamonds{} cards,",
                     "{C:money}+$#2#{} to payout and earn it,",
                     "resets each {C:attention}Ante{}",
                     "{C:inactive}(Currently {C:money}$#1#{C:inactive}){}"
@@ -204,7 +204,7 @@ return {
             j_cl_clover_solution = {
                 name = "Clover Solution",
                 text = {
-                    "When scoring 2-4 {C:clubs}Clubs{},",
+                    "If 2-4 scoring {C:clubs}Clubs{} cards,",
                     "double {C:green}propabilities{} until",
                     "next {C:attention}Blind{} is selected",
                     "{C:inactive}(Currently {X:green,C:white} X#1# {C:inactive}){}"
@@ -213,8 +213,8 @@ return {
             j_cl_vip_pass = {
                 name = "VIP Pass",
                 text = {
-                    "When scoring 2-4 {C:spades}Spades{}",
-                    "#2# times, gain a",
+                    "If 2-4 scoring {C:spades}Spades{} cards,",
+                    "after #2# times gain a",
                     "{C:attention}Voucher Tag{} and {C:money}$#3#{}",
                     "{C:inactive}(Currently {C:attention}#1#{C:inactive}/#2#){}"
                 },

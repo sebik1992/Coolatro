@@ -36,6 +36,7 @@ SMODS.Joker{
                     message = localize('a_sacrificed'),
                     colour = G.C.RED,
                 })
+                sacrifice.destroyed = true
                 G.E_MANAGER:add_event(Event({func = function()
                     sacrifice:start_dissolve()
                     return true

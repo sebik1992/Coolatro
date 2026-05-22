@@ -211,8 +211,8 @@ return {
             j_cl_vip_pass = {
                 name = "Przepustka VIP",
                 text = {
-                    "Gdy punktują 2-4 karty {C:spades}Pik{}",
-                    "#2# razy, zyskaj",
+                    "Gdy punktują 2-4 karty {C:spades}Pik{},",
+                    "po #2# aktywacjach, zyskaj",
                     "{C:attention}Znacznik Kuponu{} i {C:money}$#3#{}",
                     "{C:inactive}(Obecnie {C:attention}#1#{C:inactive}/#2#){}"
                 }
