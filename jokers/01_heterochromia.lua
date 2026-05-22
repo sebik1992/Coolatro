@@ -24,18 +24,22 @@ SMODS.Joker{
             local black_suits_count = 0
             local red_suits_count = 0
 
+            local wild_count = 0
+
             for _, c in ipairs(context.full_hand) do
                 if c.ability.effect ~= 'Stone Card' then
-                    if c.base.suit == "Spades" or c.base.suit == "Clubs" then
+                    if c.ability.effect == 'Wild Card' then
+                        wild_count = wild_count + 1
+                    elseif c.base.suit == "Spades" or c.base.suit == "Clubs" then
                         black_suits_count = black_suits_count + 1
-                    end
-                    if c.base.suit == "Hearts" or c.base.suit == "Diamonds" then
+                    elseif c.base.suit == "Hearts" or c.base.suit == "Diamonds" then
                         red_suits_count = red_suits_count + 1
                     end
                 end
             end
 
-            if black_suits_count == red_suits_count then
+            local diff = math.abs(black_suits_count - red_suits_count)
+            if wild_count >= diff and (wild_count - diff) % 2 == 0 then
                 card.ability.extra.mult = card.ability.extra.mult + card.ability.extra.mult_mod
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
                     message = localize('k_upgrade_ex'),

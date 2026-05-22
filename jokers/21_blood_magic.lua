@@ -23,7 +23,7 @@ SMODS.Joker{
         if context.before and not context.blueprint then
             local hearts = {}
             for _, c in ipairs(context.scoring_hand) do
-                if c.base.suit == 'Hearts' then
+                if c.base.suit == 'Hearts' or c.ability.effect == 'Wild Card' then
                     table.insert(hearts, c)
                 end
             end
