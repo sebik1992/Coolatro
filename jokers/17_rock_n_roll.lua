@@ -7,10 +7,10 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "rock_n_roll",
-    config = { extra = { repetitions = 2 } },
+    config = { extra = { repetitions = 3 } },
     pos = { x = 0, y = 0 },
-    rarity = 1,
-    cost = 3,
+    rarity = 2,
+    cost = 4,
     blueprint_compat = true,
     eternal_compat = true,
     unlocked = true,
