@@ -7,7 +7,7 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "business_shark",
-    config = { extra = { x_mult = 3, cost_mod = 3 } },
+    config = { extra = { x_mult = 3, cost_mod = 2 } },
     pos = { x = 0, y = 0 },
     rarity = 1,
     cost = 5,

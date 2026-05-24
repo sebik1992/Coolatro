@@ -25,15 +25,16 @@ SMODS.Joker{
     soul_pos = nil,
 
     calculate = function(self, card, context)
-        if context.repetition and context.cardarea == G.play then
-            if context.other_card.ability.effect == 'Stone Card' then
-                return {
-                    message = localize('k_again_ex'),
-                    sound = 'cl_guitar_riff',
-                    repetitions = card.ability.extra.repetitions,
-                    card = context.other_card
-                }
-            end
+        if context.repetition and (
+            context.other_card.ability.effect == 'Stone Card' and
+            (context.cardarea == G.play or context.cardarea == G.hand)
+        ) then
+            return {
+                message = localize('k_again_ex'),
+                sound = 'cl_guitar_riff',
+                repetitions = card.ability.extra.repetitions,
+                card = context.other_card
+            }
         end
     end,
 

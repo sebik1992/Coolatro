@@ -7,7 +7,7 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "bar_code",
-    config = { extra = { payout = 0, payout_increase = 3 } },
+    config = { extra = { payout = 0, payout_increase = 2 } },
     pos = { x = 0, y = 0 },
     rarity = 2,
     cost = 5,

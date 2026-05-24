@@ -7,7 +7,7 @@ SMODS.Atlas({
 
 SMODS.Joker{
     key = "secret_agent",
-    config = { extra = { x_mult = 2 } },
+    config = { extra = { x_mult = 2.5 } },
     pos = { x = 0, y = 0 },
     rarity = 1,
     cost = 4,
