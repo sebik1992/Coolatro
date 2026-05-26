@@ -18,6 +18,9 @@ SMODS.Joker{
     atlas = 'ghost',
 
     calculate = function(self, card, context)
+        if context.starting_shop then
+            card.ability.extra.shop_skipped = true
+        end
         if context.buying_card or context.open_booster then
             card.ability.extra.shop_skipped = false
         end
@@ -25,7 +28,6 @@ SMODS.Joker{
             if card.ability.extra.shop_skipped then
                 add_tag(Tag('tag_ethereal'))
             end
-            card.ability.extra.shop_skipped = true
         end
     end,
 
