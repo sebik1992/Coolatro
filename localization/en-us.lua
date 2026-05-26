@@ -1,14 +1,6 @@
 return {
     descriptions = {
         Joker = {
-            j_cl_patchwork = {
-                name = "Patchwork",
-                text = {
-                    "{C:chips}+#1#{} Chips per unique",
-                    "{C:attention}Enchancement{} on",
-                    "scored or held cards",
-                },
-            },
             j_cl_heterochromia = {
                 name = "Heterochromia",
                 text = {
@@ -24,7 +16,7 @@ return {
                     "Create {C:spectral}Etheral Tag{}",
                     "after {C:attention}Shop{} is left",
                     "with no purchases"
-                    
+
                 },
             },
             j_cl_flashforward = {
@@ -34,53 +26,19 @@ return {
                     "after {C:attention}Blind{} is skipped"
                 },
             },
+            j_cl_secret_agent = {
+                name = "Secret Agent",
+                text = {
+                    "{X:mult,C:white} X#1# {} Mult if",
+                    "no {C:attention}face{} cards",
+                    "held in hand"
+                },
+            },
             j_cl_fortune_dealer = {
                 name = "Fortune Dealer",
                 text = {
                     "Shop contains",
                     "only {C:tarot}Tarot{} cards"
-                },
-            },
-            j_cl_stamped_delivery = {
-                name = "Stamped Delivery",
-                text = {
-                    "{C:attention}Numbered cards{} gain a random",
-                    "{C:attention}seal{} when added to a deck"
-                },
-            },
-            j_cl_flea_market = {
-                name = "Flea Market",
-                text = {
-                    "{C:green}#3# in #4#{} chance for discarded",
-                    "{C:attention}#1#s{} to create a {C:tarot}Tarot{} card,",
-                    "{C:attention}#2#s{} to create a {C:planet}Planet{} card,",
-                    "ranks change every round",
-                    "{C:inactive}(Must have room){}"
-                },
-            },
-            j_cl_pinata = {
-                name = "Piñata",
-                text = {
-                    "Sell this to add {C:dark_edition}Foil{},",
-                    "{C:dark_edition}Holographic{} or {C:dark_edition}Polychrome{}",
-                    "edition to cards in your deck",
-                    "{C:attention}+#2#{} cards per round played",
-                    "{C:inactive}(Currently {C:attention}#1#{C:inactive} cards){}"
-                },
-            },
-            j_cl_business_shark = {
-                name = "Business Shark",
-                text = {
-                    "{X:mult,C:white} X#1# {} Mult",
-                    "Shop items cost {C:money}$#2#{} more",
-                },
-            },
-            j_cl_plant = {
-                name = "Home Plant",
-                text = {
-                    "Has double Chips and Mult of base poker hand",
-                    "Play a {C:attention}#3#{} for it to grow",
-                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips and {C:mult}+#2#{C:inactive} Mult){}"
                 },
             },
             j_cl_mult = {
@@ -99,15 +57,6 @@ return {
                     "gain {C:blue}+#1#{} hands"
                 },
             },
-            j_cl_jackpot = {
-                name = "Jackpot",
-                text = {
-                    "Scored {C:attention}7s{} have",
-                    "{C:green}#1# in #2#{} chance to add {C:dark_edition}Foil{},",
-                    "{C:dark_edition}Holographic{} or {C:dark_edition}Polychrome{}",
-                    "edition to a random {C:attention}Joker{}"
-                },
-            },
             j_cl_reclaimed = {
                 name = "Reclaimed Joker",
                 text = {
@@ -116,12 +65,46 @@ return {
                     "{C:inactive}(Currently {C:red}+#1#{C:inactive} discards){}"
                 },
             },
-            j_cl_secret_agent = {
-                name = "Secret Agent",
+            j_cl_business_shark = {
+                name = "Business Shark",
                 text = {
-                    "{X:mult,C:white} X#1# {} Mult if",
-                    "no {C:attention}face{} cards",
-                    "held in hand"
+                    "{X:mult,C:white} X#1# {} Mult",
+                    "Shop items cost {C:money}$#2#{} more",
+                },
+            },
+            j_cl_plant = {
+                name = "Home Plant",
+                text = {
+                    "Has double Chips and Mult of base poker hand",
+                    "Play a {C:attention}#3#{} for it to grow",
+                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips and {C:mult}+#2#{C:inactive} Mult){}"
+                },
+            },
+            j_cl_stamped_delivery = {
+                name = "Stamped Delivery",
+                text = {
+                    "{C:attention}Numbered cards{} gain a random",
+                    "{C:attention}seal{} when added to a deck"
+                },
+            },
+            j_cl_pinata = {
+                name = "Piñata",
+                text = {
+                    "Sell this to add {C:dark_edition}Foil{},",
+                    "{C:dark_edition}Holographic{} or {C:dark_edition}Polychrome{}",
+                    "edition to cards in your deck",
+                    "{C:attention}+#2#{} cards per round played",
+                    "{C:inactive}(Currently {C:attention}#1#{C:inactive} cards){}"
+                },
+            },
+            j_cl_flea_market = {
+                name = "Flea Market",
+                text = {
+                    "{C:green}#3# in #4#{} chance for discarded",
+                    "{C:attention}#1#s{} to create a {C:tarot}Tarot{} card,",
+                    "{C:attention}#2#s{} to create a {C:planet}Planet{} card,",
+                    "ranks change every round",
+                    "{C:inactive}(Must have room){}"
                 },
             },
             j_cl_gym = {
@@ -130,13 +113,6 @@ return {
                     "Increase lowest",
                     "rank of scored",
                     "cards by {C:attention}1{}"
-                },
-            },
-            j_cl_rock_n_roll = {
-                name = "Rock'n'roll",
-                text = {
-                    "{C:attention}Stone Cards{} trigger",
-                    "{C:attention}#1#{} additional times"
                 },
             },
             j_cl_collector_stamp = {
@@ -148,12 +124,19 @@ return {
                     "{C:attention}Standard packs{}"
                 },
             },
-            j_cl_sphagetti = {
-                name = "Sphagetti",
+            j_cl_patchwork = {
+                name = "Patchwork",
                 text = {
-                    "Shuffle all {C:attention}Enchanced{} cards",
-                    "at top of the deck",
-                    "for the next {C:attention}#1#{} rounds"
+                    "{C:chips}+#1#{} Chips per unique",
+                    "{C:attention}Enchancement{} on",
+                    "scored or held cards"
+                },
+            },
+            j_cl_rock_n_roll = {
+                name = "Rock'n'roll",
+                text = {
+                    "{C:attention}Stone Cards{} trigger",
+                    "{C:attention}#1#{} additional times"
                 },
             },
             j_cl_caleidoscope = {
@@ -219,12 +202,13 @@ return {
                     "{C:inactive}(Currently {C:attention}#1#{C:inactive}/#2#){}"
                 },
             },
-            j_cl_supply_key = {
-                name = "Jkr Co. Supply Pack Key",
+            j_cl_jackpot = {
+                name = "Jackpot",
                 text = {
-                    "Contents of all {C:attention}Booster Packs{}",
-                    "have {C:green}#1# in #2#{} chance",
-                    "to be a {C:legendary}Legendary Joker{}"
+                    "Scored {C:attention}7s{} have",
+                    "{C:green}#1# in #2#{} chance to add {C:dark_edition}Foil{},",
+                    "{C:dark_edition}Holographic{} or {C:dark_edition}Polychrome{}",
+                    "edition to a random {C:attention}Joker{}"
                 },
             },
             j_cl_bench = {
@@ -233,6 +217,22 @@ return {
                     "{X:mult,C:white} X#1# {} Mult per",
                     "card type in",
                     "{C:attention}consumable{} area"
+                },
+            },
+            j_cl_sphagetti = {
+                name = "Sphagetti",
+                text = {
+                    "Shuffle all {C:attention}Enchanced{} cards",
+                    "at top of the deck",
+                    "for the next {C:attention}#1#{} rounds"
+                },
+            },
+            j_cl_supply_key = {
+                name = "Jkr Co. Supply Pack Key",
+                text = {
+                    "Contents of all {C:attention}Booster Packs{}",
+                    "have {C:green}#1# in #2#{} chance",
+                    "to be a {C:legendary}Legendary Joker{}"
                 },
             },
             j_cl_magician = {

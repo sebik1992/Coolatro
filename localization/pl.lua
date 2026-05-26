@@ -1,13 +1,6 @@
 return {
     descriptions = {
         Joker = {
-            j_cl_patchwork = {
-                name = "Zszywanka",
-                text = {
-                    "{C:chips}+#1#{} Żet. za każde unikalne {C:attention}Ulepszenie{}",
-                    "na zagrywanych kartach lub trzymanych na ręce",
-                },
-            },
             j_cl_heterochromia = {
                 name = "Heterochromia",
                 text = {
@@ -31,54 +24,19 @@ return {
                     "po pominięciu {C:attention}Przeszkadzajki{}"
                 },
             },
+            j_cl_secret_agent = {
+                name = "Tajniak",
+                text = {
+                    "{X:mult,C:white} X#1# {} Mnoż. jeśli",
+                    "nie ma kart z {C:attention}figurą{}",
+                    "trzymanych na ręce"
+                }
+            },
             j_cl_fortune_dealer = {
                 name = "Wróżba na zamówienie",
                 text = {
                     "Sklep zawieraja",
                     "wyłącznie karty {C:tarot}tarota{}"
-                },
-            },
-            j_cl_stamped_delivery = {
-                name = "Wysyłka z Pieczątką",
-                text = {
-                    "{C:attention}Karty numerowane{} otrzymują losową",
-                    "{C:attention}pieczęć{} w momencie dodania do talii"
-                },
-            },
-            j_cl_flea_market = {
-                name = "Pchli Targ",
-                text = {
-                    "Odrzucone {C:attention}#1#{} mają szansę {C:green}#3# na #4#{}",
-                    "by stworzyć kartę {C:tarot}Tarota{}",
-                    "Odrzucone {C:attention}#2#{} mają szansę {C:green}#3# na #4#{}",
-                    "by stworzyć kartę {C:planet}Planety{}",
-                    "Ranga zmienia się co rundę",
-                    "{C:inactive}(wymaga miejsca){}"
-                },
-            },
-            j_cl_pinata = {
-                name = "Piniata",
-                text = {
-                    "Sprzedaj tę kartę aby dodać",
-                    "wersję {C:dark_edition}w folii{}, {C:dark_edition}holograficzą{}",
-                    "albo {C:dark_edition}polichromowaną{} do kart w twojej talii",
-                    "{C:attention}+#2#{} karty na rundę",
-                    "{C:inactive}(Obecnie {C:attention}#1#{C:inactive} kart){}"
-                },
-            },
-            j_cl_business_shark = {
-                name = "Rekin Biznesu",
-                text = {
-                    "{X:mult,C:white} X#1# {} Mnoż.",
-                    "Przedmioty w sklepie kosztują {C:money}$#2#{} więcej",
-                },
-            },
-            j_cl_plant = {
-                name = "Roślinka",
-                text = {
-                    "Daje podwójne Żet. i Mnoż. podstawowej wersji ręki pokerowej",
-                    "Zagraj układ {C:attention}#3#{} aby podrosła",
-                    "{C:inactive}(Obecnie {C:chips}+#1#{C:inactive} Żet. i {C:mult}+#2#{C:inactive} Mnoż.){}"
                 },
             },
             j_cl_mult = {
@@ -97,15 +55,6 @@ return {
                     "otrzymaj {C:blue}+#1#{} ręce"
                 }
             },
-            j_cl_jackpot = {
-                name = "Jackpot",
-                text = {
-                    "Punktujace {C:attention}7ki{} mają",
-                    "{C:green}#1# na #2#{} szans na dodanie wersji {C:dark_edition}w folii{},",
-                    "{C:dark_edition}holograficznej{} lub {C:dark_edition}polichromowanej{}",
-                    "do losowego {C:attention}Jokera{}"
-                }
-            },
             j_cl_reclaimed = {
                 name = "Joker z recyklingu",
                 text = {
@@ -114,13 +63,47 @@ return {
                     "{C:inactive}(Obecnie {C:red}+#1#{C:inactive} zrzutek)"
                 }
             },
-            j_cl_secret_agent = {
-                name = "Tajniak",
+            j_cl_business_shark = {
+                name = "Rekin Biznesu",
                 text = {
-                    "{X:mult,C:white} X#1# {} Mnoż. jeśli",
-                    "nie ma kart z {C:attention}figurą{}",
-                    "trzymanych na ręce"
-                }
+                    "{X:mult,C:white} X#1# {} Mnoż.",
+                    "Przedmioty w sklepie kosztują {C:money}$#2#{} więcej",
+                },
+            },
+            j_cl_plant = {
+                name = "Roślinka",
+                text = {
+                    "Daje podwójne Żet. i Mnoż. podstawowej wersji ręki pokerowej",
+                    "Zagraj układ {C:attention}#3#{} aby podrosła",
+                    "{C:inactive}(Obecnie {C:chips}+#1#{C:inactive} Żet. i {C:mult}+#2#{C:inactive} Mnoż.){}"
+                },
+            },
+            j_cl_stamped_delivery = {
+                name = "Wysyłka z Pieczątką",
+                text = {
+                    "{C:attention}Karty numerowane{} otrzymują losową",
+                    "{C:attention}pieczęć{} w momencie dodania do talii"
+                },
+            },
+            j_cl_pinata = {
+                name = "Piniata",
+                text = {
+                    "Sprzedaj tę kartę aby dodać",
+                    "wersję {C:dark_edition}w folii{}, {C:dark_edition}holograficzą{}",
+                    "albo {C:dark_edition}polichromowaną{} do kart w twojej talii",
+                    "{C:attention}+#2#{} karty na rundę",
+                    "{C:inactive}(Obecnie {C:attention}#1#{C:inactive} kart){}"
+                },
+            },
+            j_cl_flea_market = {
+                name = "Pchli Targ",
+                text = {
+                    "{C:green}#3# na #4#{} szans na odrzuconą",
+                    "{C:attention}#1#{} by stworzyć kartę {C:tarot}Tarota{},",
+                    "{C:attention}#2#{} by stworzyć kartę {C:planet}Planety{},",
+                    "rangi zmieniają się co rundę",
+                    "{C:inactive}(wymaga miejsca){}"
+                },
             },
             j_cl_gym = {
                 name = "Siłka",
@@ -128,13 +111,6 @@ return {
                     "Podnieś najniższą",
                     "rangę punktujących",
                     "kart o {C:attention}1{}"
-                }
-            },
-            j_cl_rock_n_roll = {
-                name = "Rock'n'roll",
-                text = {
-                    "{C:attention}Kamienne karty{} aktywują się",
-                    "{C:attention}#1#{} dodatkowe razy"
                 }
             },
             j_cl_collector_stamp = {
@@ -146,12 +122,19 @@ return {
                     "{C:attention}Paczek standardowych{}"
                 }
             },
-            j_cl_sphagetti = {
-                name = "Spagetti",
+            j_cl_patchwork = {
+                name = "Zszywanka",
                 text = {
-                    "Umieść {C:attention}Ulepszone karty{}",
-                    "na wierzchu talii",
-                    "na następne {C:attention}#1#{} rund"
+                    "{C:chips}+#1#{} Żet. za każde unikalne",
+                    "{C:attention}Ulepszenie{} na kartach",
+                    "zagrywanych lub trzymanych na ręce"
+                },
+            },
+            j_cl_rock_n_roll = {
+                name = "Rock'n'roll",
+                text = {
+                    "{C:attention}Kamienne karty{} aktywują się",
+                    "{C:attention}#1#{} dodatkowe razy"
                 }
             },
             j_cl_caleidoscope = {
@@ -217,12 +200,13 @@ return {
                     "{C:inactive}(Obecnie {C:attention}#1#{C:inactive}/#2#){}"
                 }
             },
-            j_cl_supply_key = {
-                name = "Klucz do Paczki Jkr Co.",
+            j_cl_jackpot = {
+                name = "Jackpot",
                 text = {
-                    "Zawartość z {C:attention}Paczek wzmacniających{}",
-                    "ma szasnę {C:green}#1# na #2#{}",
-                    "by stać się {C:legendary}Legendarnym Jokerem{}"
+                    "Punktujace {C:attention}7ki{} mają",
+                    "{C:green}#1# na #2#{} szans na dodanie wersji {C:dark_edition}w folii{},",
+                    "{C:dark_edition}holograficznej{} lub {C:dark_edition}polichromowanej{}",
+                    "do losowego {C:attention}Jokera{}"
                 }
             },
             j_cl_bench = {
@@ -231,6 +215,22 @@ return {
                     "{X:mult,C:white} X#1# {} Mnoż. za",
                     "każdy rodzaj karty w",
                     "obszarze przedm. {C:attention}zużywalnych{}"
+                }
+            },
+            j_cl_sphagetti = {
+                name = "Spagetti",
+                text = {
+                    "Umieść {C:attention}Ulepszone karty{}",
+                    "na wierzchu talii",
+                    "na następne {C:attention}#1#{} rundy"
+                }
+            },
+            j_cl_supply_key = {
+                name = "Klucz do Paczki Jkr Co.",
+                text = {
+                    "Zawartość z {C:attention}Paczek wzmacniających{}",
+                    "ma szasnę {C:green}#1# na #2#{}",
+                    "by stać się {C:legendary}Legendarnym Jokerem{}"
                 }
             },
             j_cl_magician = {
@@ -248,7 +248,7 @@ return {
                     "Aktywuj potrójnie 2 Jokery na {C:attention}#1#{}",
                     "{C:red}Osłabia{} wszystkie pozostałe Jokery",
                     "Zmiana co zagrywaną rękę",
-                    "{C:inactive}(Jokery nie zmieniają się po wybraniu Przeszkadzajki){}",
+                    "{s:0.8,C:inactive}(Jokery nie zmieniają się po wybraniu Przeszkadzajki){}",
                 },
             },
         }
