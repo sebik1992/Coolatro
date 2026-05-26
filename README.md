@@ -34,7 +34,7 @@ Feel free to report any bugs or balance changes proposals!
 | ![Knight](assets/2x/j_cl_knight.png) | **Knight** | When Boss Blind is selected, gain +3 hands |
 | ![Reclaimed Joker](assets/2x/j_cl_reclaimed.png) | **Reclaimed Joker** | +1 discard next round per reroll in the shop (Currently +0 discards) |
 | ![Business Shark](assets/2x/j_cl_business_shark.png) | **Business Shark** | X3 Mult, Shop items cost $2 more |
-| Home Plant | **Home Plant** | Has double Chips and Mult of base poker hand, Play a High Card for it to grow (Currently +0 Chips and +0 Mult) |
+|   | **Home Plant** | Has double Chips and Mult of base poker hand, Play a High Card for it to grow (Currently +0 Chips and +0 Mult) |
 | ![Stamped Delivery](assets/2x/j_cl_stamped_delivery.png) | **Stamped Delivery** | Numbered cards gain a random seal when added to a deck |
 | ![Piñata](assets/2x/j_cl_pinata.png) | **Piñata** | Sell this to add Foil, Holographic or Polychrome edition to cards in your deck, +2 cards per round played (Currently 0 cards) |
 | ![Flea Market](assets/2x/j_cl_flea_market.png) | **Flea Market** | #3# in #4# chance for discarded 2s to create a Tarot card, 3s to create a Planet card, ranks change every round (Must have room) |
