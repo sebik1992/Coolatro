@@ -43,6 +43,7 @@ SMODS.Joker{
             if not my_idx then return end
 
             for i, j in ipairs(G.jokers.cards) do
+                j.ability.extra = j.ability.extra or {}
                 j.ability.extra.cl_pendulum_left  = nil
                 j.ability.extra.cl_pendulum_right = nil
                 if i == my_idx - 1 or i == my_idx - 2 then
@@ -78,6 +79,7 @@ SMODS.Joker{
             pendulum_debuff_all(pendulum, false)
             for _, j in ipairs(G.jokers.cards) do
                 if j ~= pendulum then
+                    j.ability.extra = j.ability.extra or {}
                     j.ability.extra.cl_pendulum_left  = nil
                     j.ability.extra.cl_pendulum_right = nil
                 end
