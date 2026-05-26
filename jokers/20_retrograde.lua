@@ -20,7 +20,7 @@ SMODS.Joker{
     soul_pos = nil,
 
     calculate = function(self, card, context)
-        if context.using_consumeable and not context.blueprint then
+        if context.using_consumeable then
             local consumeable = context.consumeable
             if not (consumeable and consumeable.ability.set == 'Planet') then return end
             local hand_type = consumeable.ability.consumeable and consumeable.ability.consumeable.hand_type

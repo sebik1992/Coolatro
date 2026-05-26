@@ -20,7 +20,7 @@ SMODS.Joker{
     soul_pos = nil,
 
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.play and then
+        if context.individual and context.cardarea == G.play then
             if context.other_card.base.value == '7' then
                 if pseudorandom(pseudoseed('jackpot')) < G.GAME.probabilities.normal * card.ability.extra.prob_top / card.ability.extra.prob_bottom then
                     local candidates = {}
