@@ -37,7 +37,7 @@ Feel free to report any bugs or balance changes proposals!
 |   | **Home Plant** | Has double Chips and Mult of base poker hand, Play a High Card for it to grow (Currently +0 Chips and +0 Mult) |
 | ![Stamped Delivery](assets/2x/j_cl_stamped_delivery.png) | **Stamped Delivery** | Numbered cards gain a random seal when added to a deck |
 | ![Piñata](assets/2x/j_cl_pinata.png) | **Piñata** | Sell this to add Foil, Holographic or Polychrome edition to cards in your deck, +2 cards per round played (Currently 0 cards) |
-| ![Flea Market](assets/2x/j_cl_flea_market.png) | **Flea Market** | #3# in #4# chance for discarded 2s to create a Tarot card, 3s to create a Planet card, ranks change every round (Must have room) |
+| ![Flea Market](assets/2x/j_cl_flea_market.png) | **Flea Market** | 1 in 3 chance for discarded 2s to create a Tarot card, 3s to create a Planet card, ranks change every round (Must have room) |
 | ![Gym](assets/2x/j_cl_gym.png) | **Gym** | Increase lowest rank of scored cards by 1 |
 | ![Collector's Stamp](assets/2x/j_cl_collector_stamp.png) | **Collector's Stamp** | Increase sell value by Chips (maximum $20) of cards opened from Standard packs |
 | ![Patchwork](assets/2x/j_cl_patchwork.png) | **Patchwork** | +30 Chips per unique Enchancement on scored or held cards |
