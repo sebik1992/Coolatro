@@ -140,7 +140,7 @@ return {
                 },
             },
             j_cl_collector_stamp = {
-                name = "Collector Stamp",
+                name = "Collector's Stamp",
                 text = {
                     "Increase {C:attention}sell value{}",
                     "by {C:chips}Chips{} (maximum {C:money}$20{})",
@@ -177,9 +177,9 @@ return {
             j_cl_retrograde = {
                 name = "Retrograde",
                 text = {
-                    "Played hands above level one",
-                    "{C:red}decrease{} poker hand and",
-                    "create {C:spectral}#1#{} spectral card",
+                    "{C:planet}Planets{} used to upgrade",
+                    "lowest-level {C:attention}poker hand{},",
+                    "create {C:spectral}Trance{} spectral card",
                     "{C:inactive}(Must have room){}"
                 },
             },

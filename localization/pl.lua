@@ -175,9 +175,9 @@ return {
             j_cl_retrograde = {
                 name = "Retrogradacja",
                 text = {
-                    "Zagrywane układy pokerowe powyżej poziomu 1",
-                    "{C:red}zmniejszają{} poziom układu oraz",
-                    "tworzą kartę ducha {C:spectral}#1#{}",
+                    "{C:planet}Planety{} użyte do ulepszenia",
+                    "{C:attention}układu pokerowego{} o najniższym poziomie,",
+                    "tworzą kartę ducha {C:spectral}Trans{}",
                     "{C:inactive}(wymaga miejsca){}"
                 }
             },
