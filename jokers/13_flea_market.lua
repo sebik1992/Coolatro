@@ -44,8 +44,6 @@ SMODS.Joker{
         end
 
         if context.end_of_round and not context.blueprint and not (context.individual or context.repetition) then
-
-
             card.ability.extra.tarrot_rank = pseudorandom_element(G._cl_.RANK_POOL, pseudoseed('flea_tarot_rank'))
             repeat
                 card.ability.extra.planet_rank = pseudorandom_element(G._cl_.RANK_POOL, pseudoseed('flea_planet_rank'))

@@ -44,7 +44,7 @@ SMODS.Joker{
         end
 
         if context.joker_main then
-            if context.scoring_name == hand then
+            if context.scoring_name == hand and not context.blueprint then
                 card.ability.extra.x_mult = card.ability.extra.x_mult + card.ability.extra.x_mult_mod
                 card_eval_status_text(card, 'extra', nil, nil, nil, {
                     message = localize('k_upgrade_ex'),

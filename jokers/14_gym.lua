@@ -20,7 +20,7 @@ SMODS.Joker{
     soul_pos = nil,
 
     calculate = function(self, card, context)
-        if context.before and not context.blueprint then
+        if context.before and then
             local min_id = 15
             for _, c in ipairs(context.scoring_hand) do
                 local id = c:get_id()

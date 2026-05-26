@@ -26,18 +26,16 @@ SMODS.Joker{
             })
         end
 
-        if context.setting_blind and not context.blueprint then
-            local pending = card.ability.extra.discards
-            if pending > 0 then
-                G.E_MANAGER:add_event(Event({func = function()
-                    ease_discard(pending)
+        if context.setting_blind then
+            if card.ability.extra.discards> 0 then
+                ease_discard(card.ability.extra.discards)
+                if not context.blueprint then
                     card_eval_status_text(card, 'extra', nil, nil, nil, {
                         message = localize('k_reset'),
                         colour = G.C.RED
                     })
-                    return true
-                end}))
-                card.ability.extra.discards = 0
+                    card.ability.extra.discards = 0
+                end
             end
         end
     end,

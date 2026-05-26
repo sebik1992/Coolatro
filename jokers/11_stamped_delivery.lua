@@ -20,7 +20,7 @@ SMODS.Joker{
     soul_pos = nil,
 
     calculate = function(self, card, context)
-        if context.playing_card_added and not context.blueprint then
+        if context.playing_card_added then
             local seals = { 'Gold', 'Red', 'Blue', 'Purple' }
             for i, playing_card in ipairs(context.cards) do
                 local id = playing_card:get_id()

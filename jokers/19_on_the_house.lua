@@ -21,7 +21,7 @@ SMODS.Joker{
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play and context.scoring_name == card.ability.extra.poker_hand then
-            if context.other_card:get_id() <= 10 then 
+            if context.other_card:get_id() >= 2 and context.other_card:get_id() <= 10 then 
                 if pseudorandom('steel_forge') < G.GAME.probabilities.normal * card.ability.extra.prob_top / card.ability.extra.prob_bottom then
                     context.other_card:set_ability(G.P_CENTERS['m_steel'], nil, true)
                     return {
