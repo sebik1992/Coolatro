@@ -10,9 +10,10 @@ Try out playing different hand combinations and try to turn downsides into power
 
 | Joker | Description |
 |-------|-------------|
-| ![Caleidoscope](assets/2x/j_cl_caleidoscope.png) | If played hand is Flush this gains X0.1 Mult and changes suit of played hand (Currently X1 Mult) |
-| ![Stamped Delivery](assets/2x/j_cl_stamped_delivery.png) | 4, 5, 6, 7 gain a random seal when added to a deck |
-| ![Retrograde](assets/2x/j_cl_retrograde.png) | Played hands above level one decrease poker hand and create Trance spectral card (Must have room) |
+| ![Caleidoscope](assets/2x/j_cl_caleidoscope.png) | If played hand is Flush this gains X0.1 Mult and changes suit of played hand |
+| ![Stamped Delivery](assets/2x/j_cl_stamped_delivery.png) | Numbered cards gain a random seal when added to a deck |
+| ![Pinata](assets/2x/j_cl_pinata.png) | Sell this to add Foil, Holographic or Polychrome edition to cards in your deck, +2 cards per round played |
+| ![Blood Magic](assets/2x/j_cl_blood_magic.png) | If 2-4 scoring Hearts cards, sacrifice random one and gain its Chips |
 
 For now this mod gives 30 jokers:
 - 16 Common Jokers
@@ -20,6 +21,7 @@ For now this mod gives 30 jokers:
 - 3 Rare Jokers
 
 This mod is balanced around vanilla power level, most of the jokers can eaisly be built around for endless mode.
+
 
 ## Side notes
 
